@@ -8,24 +8,29 @@ namespace UI
     public class PlayerHUD : MonoBehaviour, IDataObserver
     {
         [SerializeField] private TextMeshProUGUI m_currentMoneyText;
-        [SerializeField] private TextMeshProUGUI m_totalDebtText;
+
+        private float m_currentMoney = 0f;
+
+        private float CurrentMoney
+        {
+            get => m_currentMoney;
+            set
+            {
+                m_currentMoney = value;
+                UpdateMoneyDisplay();
+            }
+        }
 
         private void Start()
         {
             PlayerData.Instance.RegisterObserver(this);
             
-            m_currentMoneyText.text = "$" + PlayerData.Instance.CurrentMoney;
-            m_totalDebtText.text = "$ -" + PlayerData.Instance.TotalDebt;
+            CurrentMoney = PlayerData.Instance.CurrentMoney;
         }
 
         public void UpdateMoney(float moneyAmount)
         {
-            m_currentMoneyText.text = $"$ {moneyAmount}";
-        }
-
-        public void UpdateDebt(float debtAmount)
-        {
-            m_totalDebtText.text = $"$ -{debtAmount}";
+            CurrentMoney = moneyAmount;
         }
 
         private void OnDestroy()
@@ -37,6 +42,19 @@ namespace UI
         private void AddMoney()
         {
             PlayerData.Instance.AddMoney(Random.Range(10, 10000));
+        }
+
+        [ContextMenu("Remove Money")]
+        private void RemoveMoney()
+        {
+            PlayerData.Instance.SubstractMoney(Random.Range(10, 10000));
+        }
+
+        private void UpdateMoneyDisplay()
+        {
+            m_currentMoneyText.text = $"$ {CurrentMoney}";
+
+            m_currentMoneyText.color = CurrentMoney > 0 ? Color.green : Color.red;
         }
     }
 }
