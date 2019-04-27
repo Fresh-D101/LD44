@@ -1,13 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Observer;
+using UnityEngine;
 
 
-public class PlayerData : ISubject
+public class PlayerData : ISubject, ISerialize
 {
+    [Serializable]
+    struct SerializableData
+    {
+        public float moneyAmount;
+    }
+    
     public static PlayerData Instance;
 
-    private static float s_currentMoney = 0f;
-
+    private float m_currentMoney = 0f;
+    private List<Invoice> m_unopenedInvoices;
+    private List<Invoice> m_archivedInvoices;
+    
     private static readonly List<IDataObserver> s_observers = new List<IDataObserver>();
 
     public PlayerData()
@@ -17,20 +27,41 @@ public class PlayerData : ISubject
 
     public PlayerData(float initialMoneyAmount) : this()
     {
-        s_currentMoney = initialMoneyAmount;   
+        m_currentMoney = initialMoneyAmount;   
+    }
+
+    
+    public List<Invoice> GetArchivedInvoices()
+    {
+        return m_archivedInvoices;
+    }
+
+    public List<Invoice> GetUnopenedInvoices()
+    {
+        return m_unopenedInvoices;
     }
     
-    
+    public void AddNewInvoice(Invoice invoice)
+    {
+        m_unopenedInvoices.Add(invoice);
+    }
+
+    public Invoice GetOldestUnopenedInvoice()
+    {
+        var invoice = m_unopenedInvoices[0];
+        m_unopenedInvoices.RemoveAt(0);
+        return invoice;
+    }
+   
     public float CurrentMoney
     {
-        get => s_currentMoney;
+        get => m_currentMoney;
         private set
         {
-            s_currentMoney = value;
+            m_currentMoney = value;
             NotifyMoneyUpdate();
         }
     }
-
 
     public void AddMoney(float amount)
     {
@@ -58,5 +89,19 @@ public class PlayerData : ISubject
         {
             observer.UpdateMoney(CurrentMoney);
         }
+    }
+
+    public string Serialize()
+    {
+        var data = new SerializableData {moneyAmount = CurrentMoney};
+
+        var jsonString = JsonUtility.ToJson(data);
+        return jsonString;
+    }
+
+    public void Deserialize(string json)
+    {
+        var data = JsonUtility.FromJson<SerializableData>(json);
+        CurrentMoney = data.moneyAmount;
     }
 }
