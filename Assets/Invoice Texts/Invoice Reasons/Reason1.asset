@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b63e46ceae20ad944a050d86ae61c2ae, type: 3}
-  m_Name: Invoice1
+  m_Script: {fileID: 11500000, guid: e5bf6ae6ff22a21499e278b2e711c2ce, type: 3}
+  m_Name: Reason1
   m_EditorClassIdentifier: 
-  m_Reason: Credit Card debt
-  m_Price: 150
-  m_Duration: 2
-  m_IsSigned: 0
+  m_Text: "DIGII WARUM WURDE DAS GEL\xD6SCHT?!"
