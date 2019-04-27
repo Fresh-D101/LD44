@@ -25,7 +25,7 @@ public class PlayerData : ISubject, ISerialize
         Instance = this;
     }
 
-    public PlayerData(float initialMoneyAmount) : this()
+    public PlayerData(int initialMoneyAmount) : this()
     {
         m_currentMoney = initialMoneyAmount;   
     }
@@ -68,7 +68,7 @@ public class PlayerData : ISubject, ISerialize
         CurrentMoney += amount;
     }
 
-    public void SubstractMoney(float amount)
+    public void SubstractMoney(int amount)
     {
         CurrentMoney -= amount;
     }
