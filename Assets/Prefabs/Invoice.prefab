@@ -91,14 +91,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e3423857e1b144baa85770b0a3c11b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InvoiceScriptable: {fileID: 11400000, guid: ad169b0cbd41d75448b000729154dc5f,
-    type: 2}
+  m_InvoiceScriptable: {fileID: 0}
   m_Reason: {fileID: 2688205751250501347}
   m_Cost: {fileID: 2688205751212125212}
   m_Duration: {fileID: 2688205750607701410}
   m_SignatureButton: {fileID: 2688205750390012900}
   m_Signature: {fileID: 2688205751285548847}
-  m_IsSigned: 0
 --- !u!1 &2688205750138081556
 GameObject:
   m_ObjectHideFlags: 0
