@@ -7,7 +7,6 @@ public class PlayerData : ISubject
     public static PlayerData Instance;
 
     private static float s_currentMoney = 0f;
-    private static float s_totalDebt = 0f;
 
     private static readonly List<IDataObserver> s_observers = new List<IDataObserver>();
 
@@ -32,15 +31,6 @@ public class PlayerData : ISubject
         }
     }
 
-    public float TotalDebt
-    {
-        get => s_totalDebt;
-        private set
-        {
-            s_totalDebt = value;
-            NotifyDebtUpdate();
-        }
-    }
 
     public void AddMoney(float amount)
     {
@@ -50,16 +40,6 @@ public class PlayerData : ISubject
     public void SubstractMoney(float amount)
     {
         CurrentMoney -= amount;
-    }
-
-    public void AddToDebt(float amount)
-    {
-        TotalDebt += amount;
-    }
-
-    public void RemoveFromDebt(float amount)
-    {
-        TotalDebt -= amount;
     }
 
     public void RegisterObserver(IDataObserver o)
@@ -77,14 +57,6 @@ public class PlayerData : ISubject
         foreach (var observer in s_observers)
         {
             observer.UpdateMoney(CurrentMoney);
-        }
-    }
-
-    public void NotifyDebtUpdate()
-    {
-        foreach (var observer in s_observers)
-        {
-            observer.UpdateDebt(TotalDebt);
         }
     }
 }
