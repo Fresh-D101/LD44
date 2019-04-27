@@ -9,6 +9,6 @@ public class GameManager : MonoBehaviour
     
     private void Awake()
     {
-        m_playerData = new PlayerData(2000f);
+        m_playerData = new PlayerData(2000);
     }
 }

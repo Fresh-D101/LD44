@@ -7,7 +7,7 @@ namespace UI
 {
     public class PlayerHUD : MonoBehaviour, IDataObserver
     {
-        [SerializeField] private TextMeshProUGUI m_currentMoneyText;
+        [SerializeField] private TextMeshProUGUI m_currentMoneyText = null;
 
         private float m_currentMoney = 0f;
 

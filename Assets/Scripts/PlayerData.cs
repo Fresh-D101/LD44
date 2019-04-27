@@ -6,7 +6,7 @@ public class PlayerData : ISubject
 {
     public static PlayerData Instance;
 
-    private static float s_currentMoney = 0f;
+    private static int s_currentMoney = 0;
 
     private static readonly List<IDataObserver> s_observers = new List<IDataObserver>();
 
@@ -15,13 +15,13 @@ public class PlayerData : ISubject
         Instance = this;
     }
 
-    public PlayerData(float initialMoneyAmount) : this()
+    public PlayerData(int initialMoneyAmount) : this()
     {
         s_currentMoney = initialMoneyAmount;   
     }
     
     
-    public float CurrentMoney
+    public int CurrentMoney
     {
         get => s_currentMoney;
         private set
@@ -32,12 +32,12 @@ public class PlayerData : ISubject
     }
 
 
-    public void AddMoney(float amount)
+    public void AddMoney(int amount)
     {
         CurrentMoney += amount;
     }
 
-    public void SubstractMoney(float amount)
+    public void SubstractMoney(int amount)
     {
         CurrentMoney -= amount;
     }

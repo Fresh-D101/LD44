@@ -14,7 +14,7 @@ public class Invoice : MonoBehaviour
 
     public InvoiceData InvoiceData { get => m_InvoiceData; set => m_InvoiceData = value; }
 
-    public Invoice(InvoiceReasons invoiceReasons, float price, int duration)
+    public Invoice(InvoiceReasons invoiceReasons, int price, int duration)
     {
         m_InvoiceData = new InvoiceData(invoiceReasons, price, duration);
     }
