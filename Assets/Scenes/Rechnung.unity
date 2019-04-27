@@ -526,6 +526,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ad169b0cbd41d75448b000729154dc5f,
         type: 2}
+    - target: {fileID: 2688205749988484257, guid: 3ae5980d4167b5d4c885bc79bd39ee97,
+        type: 3}
+      propertyPath: m_InvoiceData.m_Reason
+      value: 
+      objectReference: {fileID: 11400000, guid: 546a4acaa65f04b43af8c70f703a524e,
+        type: 2}
+    - target: {fileID: 2688205749988484257, guid: 3ae5980d4167b5d4c885bc79bd39ee97,
+        type: 3}
+      propertyPath: m_InvoiceData.m_Price
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2688205749988484257, guid: 3ae5980d4167b5d4c885bc79bd39ee97,
+        type: 3}
+      propertyPath: m_InvoiceData.m_Duration
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2688205751250501347, guid: 3ae5980d4167b5d4c885bc79bd39ee97,
         type: 3}
       propertyPath: m_textInfo.characterCount
