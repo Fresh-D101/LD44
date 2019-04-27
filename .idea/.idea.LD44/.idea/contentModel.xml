@@ -8,6 +8,11 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Catastrope" t="Include">
+            <e p="Catastrophe.cs" t="Include" />
+            <e p="CatastropheData.cs" t="Include" />
+            <e p="ICatastrophe.cs" t="Include" />
+          </e>
           <e p="Debug_AddInvoice.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Invoice" t="Include">

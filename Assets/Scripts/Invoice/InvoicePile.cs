@@ -20,7 +20,7 @@ public class InvoicePile : MonoBehaviour
         m_button = GetComponent<Button>();
     }
 
-    public void AddNewInvoice(Invoice invoice)
+    public void AddNewInvoice(InvoiceData invoice)
     {
         m_data.AddNewInvoice(invoice);
         UpdateUI();
@@ -53,7 +53,24 @@ public class InvoicePile : MonoBehaviour
 
     public void OpenInvoice()
     {
-        var invoice = m_data.GetOldestUnopenedInvoice();        
+        var invoiceData = m_data.GetOldestUnopenedInvoiceData();
+        var prefab = GameManager.Instance.GetInvoicePrefab(out var designType);
+        invoiceData.InvoiceDesignType = designType;
+
+        var invoiceComponent = prefab.GetComponent<Invoice>();
+        if (invoiceComponent == null)
+        {
+
+#if DEBUG
+            Debug.LogWarning("The Invoice Template Prefabs must have an Invoice Script attached");
+            invoiceComponent = prefab.AddComponent<Invoice>();
+#else
+            return;
+#endif
+        }
+        
+        invoiceComponent.InvoiceData = invoiceData;
+
     }
 
 }

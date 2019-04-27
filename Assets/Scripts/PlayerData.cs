@@ -9,14 +9,14 @@ public class PlayerData : ISubject, ISerialize
     [Serializable]
     struct SerializableData
     {
-        public float moneyAmount;
+        public int moneyAmount;
     }
     
     public static PlayerData Instance;
 
-    private float m_currentMoney = 0f;
-    private List<Invoice> m_unopenedInvoices;
-    private List<Invoice> m_archivedInvoices;
+    private int m_currentMoney = 0;
+    private readonly List<InvoiceData> m_unopenedInvoices = new List<InvoiceData>();
+    private readonly List<InvoiceData> m_archivedInvoices = new List<InvoiceData>();
     
     private static readonly List<IDataObserver> s_observers = new List<IDataObserver>();
 
@@ -31,29 +31,29 @@ public class PlayerData : ISubject, ISerialize
     }
 
     
-    public List<Invoice> GetArchivedInvoices()
+    public List<InvoiceData> GetArchivedInvoices()
     {
         return m_archivedInvoices;
     }
 
-    public List<Invoice> GetUnopenedInvoices()
+    public List<InvoiceData> GetUnopenedInvoices()
     {
         return m_unopenedInvoices;
     }
     
-    public void AddNewInvoice(Invoice invoice)
+    public void AddNewInvoice(InvoiceData invoice)
     {
         m_unopenedInvoices.Add(invoice);
     }
 
-    public Invoice GetOldestUnopenedInvoice()
+    public InvoiceData GetOldestUnopenedInvoiceData()
     {
         var invoice = m_unopenedInvoices[0];
         m_unopenedInvoices.RemoveAt(0);
         return invoice;
     }
    
-    public float CurrentMoney
+    public int CurrentMoney
     {
         get => m_currentMoney;
         private set
@@ -63,7 +63,7 @@ public class PlayerData : ISubject, ISerialize
         }
     }
 
-    public void AddMoney(float amount)
+    public void AddMoney(int amount)
     {
         CurrentMoney += amount;
     }

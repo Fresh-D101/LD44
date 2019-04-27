@@ -9,9 +9,9 @@ namespace UI
     {
         [SerializeField] private TextMeshProUGUI m_currentMoneyText = null;
 
-        private float m_currentMoney = 0f;
+        private int m_currentMoney = 0;
 
-        private float CurrentMoney
+        private int CurrentMoney
         {
             get => m_currentMoney;
             set
@@ -28,7 +28,7 @@ namespace UI
             CurrentMoney = PlayerData.Instance.CurrentMoney;
         }
 
-        public void UpdateMoney(float moneyAmount)
+        public void UpdateMoney(int moneyAmount)
         {
             CurrentMoney = moneyAmount;
         }
