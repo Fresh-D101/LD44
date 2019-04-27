@@ -14,11 +14,11 @@ public class Invoice : MonoBehaviour
 
     public InvoiceData InvoiceData { get => m_InvoiceData; set => m_InvoiceData = value; }
 
-    public Invoice(InvoiceReasons invoiceReasons, int price, int duration)
+    public void Instantiate(InvoiceReasons invoiceReasons, int price, int duration)
     {
         m_InvoiceData = new InvoiceData(invoiceReasons, price, duration);
     }
-
+    
     private void Start()
     {
         if (InvoiceData == null)
