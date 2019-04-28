@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject InvoiceDesignTemplateWhite;
     [SerializeField] private GameObject InvoiceDesignTemplateRed;
     [SerializeField] private GameObject InvoiceDesignTemplateBlue;
+    
+    [Header("Balancing Values")]
+    [SerializeField] private int m_initialMoney;
+    [SerializeField] private int m_maxExtends;
+    [SerializeField] private int m_neededExtendProgress;
 
     private PlayerData m_playerData;
     
@@ -19,7 +24,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        m_playerData = new PlayerData(2000);
+        m_playerData = new PlayerData(m_initialMoney, m_maxExtends, m_neededExtendProgress);
 
         InvokeRepeating("HourElapser", PlayerData.TimeScale, PlayerData.TimeScale);
     }

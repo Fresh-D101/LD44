@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0" name="Assets/Sprites/animations/letter sequence">
+        <file id="0" name="Assets/Sprites/animations/letter sequence/biglul0039.png" width="700" height="723" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Assets/Sprites/animations/letter sequence/biglul0002.png" width="700" height="723" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Assets/Sprites/animations/letter sequence/biglul0003.png" width="700" height="723" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="NewAnimation" length="1000" interval="100">
+            <mainline>
+                <key id="0"/>
+            </mainline>
+        </animation>
+    </entity>
+</spriter_data>

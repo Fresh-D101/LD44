@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d60b2096b3f91e4980d168ea9e95d47, type: 3}
-  m_Name: New Catastrophe
+  m_Name: PlaneCrash
   m_EditorClassIdentifier: 
   m_CatastropheName: Plane Crash
   m_IsUnlocked: 0

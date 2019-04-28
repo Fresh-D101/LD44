@@ -1,15 +1,18 @@
-﻿using Observer;
+﻿using GameEvents;
+using Observer;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
 
 namespace UI
 {
-    public class PlayerHUD : MonoBehaviour, IDataObserver
+    public class PlayerHUD : MonoBehaviour, IDataObserver, IGameEventListener<GameEvent_InvoiceOpen>
     {
         [SerializeField] private TextMeshProUGUI m_currentMoneyText = null;
 
         private int m_currentMoney = 0;
+
+        [SerializeField] private GameObject InvoicePanel;
 
         private int CurrentMoney
         {
@@ -55,6 +58,21 @@ namespace UI
             m_currentMoneyText.text = $"$ {CurrentMoney}";
 
             m_currentMoneyText.color = CurrentMoney > 0 ? Color.green : Color.red;
+        }
+
+        public void OnGameEvent(GameEvent_InvoiceOpen eventType)
+        {
+            InvoicePanel.SetActive(eventType.IsOpen);
+        }
+
+        private void OnEnable()
+        {
+            this.EventStartListening();
+        }
+
+        private void OnDisable()
+        {
+            this.EventStopListening();
         }
     }
 }
