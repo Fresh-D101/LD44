@@ -57,7 +57,14 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
         m_progress = m_CatastropheData.Cooldown;
         m_Cooldown.text = m_CatastropheData.Cooldown.ToString();
 
-        PlayerData.Instance.AddMoney(Random.Range(m_CatastropheData.MinimumKills, m_CatastropheData.MaximumKills));
+        if (Random.Range(0f, 1f) <= m_CatastropheData.CritChance)
+        {
+            PlayerData.Instance.AddMoney(Random.Range(4 * (m_CatastropheData.MinimumKills + 1), 4 * m_CatastropheData.MaximumKills));
+        }
+        else
+        {
+            PlayerData.Instance.AddMoney(Random.Range(m_CatastropheData.MinimumKills, m_CatastropheData.MaximumKills));
+        }
     }
 
     private void EndCooldown()

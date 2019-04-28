@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d60b2096b3f91e4980d168ea9e95d47, type: 3}
   m_Name: New Catastrophe
   m_EditorClassIdentifier: 
-  m_Name: 
+  m_CatastropheName: Plane Crash
   m_IsUnlocked: 0
-  m_Price: 0
-  m_Duration: 0
-  m_Cooldown: 0
-  m_MinimumKills: 0
-  m_MaximumKills: 1
-  m_CritChance: 0
+  m_Price: 50
+  m_Duration: 12
+  m_Cooldown: 30
+  m_MinimumKills: 40
+  m_MaximumKills: 200
+  m_CritChance: 0.1

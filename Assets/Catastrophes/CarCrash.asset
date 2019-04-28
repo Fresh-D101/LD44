@@ -15,8 +15,8 @@ MonoBehaviour:
   m_CatastropheName: Car Crash
   m_IsUnlocked: 0
   m_Price: 0
-  m_Duration: 4
+  m_Duration: 3
   m_Cooldown: 4
   m_MinimumKills: 0
   m_MaximumKills: 4
-  m_CritChance: 0.05
+  m_CritChance: 0.025
