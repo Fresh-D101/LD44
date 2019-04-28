@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d60b2096b3f91e4980d168ea9e95d47, type: 3}
-  m_Name: New Catastrophe
+  m_Name: PlaneCrash
   m_EditorClassIdentifier: 
+  m_lockedIcon: {fileID: 21300000, guid: 7281e39740d6dc541b4d8af83f2567a0, type: 3}
+  m_unlockedIcon: {fileID: 21300000, guid: 530f901aa2c4189469653c9e0a06da0e, type: 3}
   m_CatastropheName: Plane Crash
   m_IsUnlocked: 0
   m_Price: 50

@@ -30,9 +30,19 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
             return;
         }
 
+        if (m_CatastropheData.IsUnlocked)
+        {
+            m_Icon.sprite = m_CatastropheData.UnlockedIcon;
+            m_Kills.text = $"Deaths: {m_CatastropheData.MinimumKills} - {m_CatastropheData.MaximumKills}";
+        }
+        else
+        {
+            m_Icon.sprite = m_CatastropheData.LockedIcon;
+            m_Kills.text = $"Price: {m_CatastropheData.Price}";
+        }
+        
         m_ActivationBar.maxValue = m_CatastropheData.Duration * PlayerData.TimeScale;
         m_AppName.text = m_CatastropheData.CatastropheName;
-        m_Kills.text = $"Kills: {m_CatastropheData.MinimumKills} - {m_CatastropheData.MaximumKills}";
         m_Cooldown.text = null;
     }
 

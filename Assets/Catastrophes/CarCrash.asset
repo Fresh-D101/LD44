@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d60b2096b3f91e4980d168ea9e95d47, type: 3}
   m_Name: CarCrash
   m_EditorClassIdentifier: 
+  m_lockedIcon: {fileID: 21300000, guid: 7281e39740d6dc541b4d8af83f2567a0, type: 3}
+  m_unlockedIcon: {fileID: 21300000, guid: 5fc8ba949d6d5af47a3225c0cb11c3f3, type: 3}
   m_CatastropheName: Car Crash
-  m_IsUnlocked: 0
+  m_IsUnlocked: 1
   m_Price: 0
   m_Duration: 3
   m_Cooldown: 4

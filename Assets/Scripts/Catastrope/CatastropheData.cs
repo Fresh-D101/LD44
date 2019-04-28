@@ -3,6 +3,8 @@
 [CreateAssetMenu(fileName = "New Catastrophe", menuName = "Catastrophe/New Catastrophe")]
 public class CatastropheData : ScriptableObject
 {
+    [SerializeField] private Sprite m_lockedIcon = null;
+    [SerializeField] private Sprite m_unlockedIcon = null;
     [SerializeField] private string m_CatastropheName = null;
     [SerializeField] private bool m_IsUnlocked = false;
     [SerializeField] private int m_Price = 0;
@@ -21,4 +23,6 @@ public class CatastropheData : ScriptableObject
     public int MinimumKills { get => m_MinimumKills; set => m_MinimumKills = value; }
     public int MaximumKills { get => m_MaximumKills; set => m_MaximumKills = value; }
     public float CritChance { get => m_CritChance; set => m_CritChance = value; }
+    public Sprite LockedIcon { get => m_lockedIcon; set => m_lockedIcon = value; }
+    public Sprite UnlockedIcon { get => m_unlockedIcon; set => m_unlockedIcon = value; }
 }
