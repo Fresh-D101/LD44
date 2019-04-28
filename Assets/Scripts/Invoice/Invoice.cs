@@ -4,7 +4,7 @@ using TMPro;
 
 public class Invoice : MonoBehaviour
 {
-    [SerializeField] private InvoiceData m_InvoiceData;
+    [SerializeField] private InvoiceData m_InvoiceData = null;
     [Space]
     [SerializeField] private TextMeshProUGUI m_Reason = null;
     [SerializeField] private TextMeshProUGUI m_Cost = null;
