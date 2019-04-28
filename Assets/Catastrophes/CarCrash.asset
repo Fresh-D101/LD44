@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d60b2096b3f91e4980d168ea9e95d47, type: 3}
   m_Name: CarCrash
   m_EditorClassIdentifier: 
-  m_Name: CarCrash
-  m_IsUnlocked: 1
+  m_CatastropheName: Car Crash
+  m_IsUnlocked: 0
   m_Price: 0
   m_Duration: 1
   m_Cooldown: 5
