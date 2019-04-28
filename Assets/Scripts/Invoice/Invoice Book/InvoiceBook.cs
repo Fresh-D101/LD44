@@ -1,13 +1,45 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using GameEvents;
 
-public class InvoiceBook : MonoBehaviour
+public class InvoiceBook : MonoBehaviour,
+    IGameEventListener<GameEvent_InvoiceArchived>
 {
-    private List<ArchivedInvoice> m_InvoiceDataList = new List<ArchivedInvoice>();
+    [SerializeField] private GameObject m_ArchivedInvoicePrefab = null;
+    [SerializeField] private Transform m_LeftPage = null;
+    [SerializeField] private Transform m_RightPage = null;
 
+    private List<ArchivedInvoice> m_InvoiceDataList = new List<ArchivedInvoice>();
+    private ArchivedInvoice[] m_archivedInvoices = new ArchivedInvoice[16];
+
+    [ContextMenu("Initialize")]
     public void Initialize()
     {
-        
+        GameObject temp = null;
+
+        for (int left = 0; left < 8; left++)
+        {
+            temp = Instantiate(m_ArchivedInvoicePrefab, m_LeftPage);
+            temp.transform.name = $"Invoice Info Box - left {left}";
+
+            m_archivedInvoices[left] = temp.GetComponent<ArchivedInvoice>();
+        }
+
+        for (int right = 0; right < 8; right++)
+        {
+            temp = Instantiate(m_ArchivedInvoicePrefab, m_RightPage);
+            temp.transform.name = $"Invoice Info Box - right {right}";
+
+            m_archivedInvoices[right] = temp.GetComponent<ArchivedInvoice>();
+        }
+    }
+
+    public void OnGameEvent(GameEvent_InvoiceArchived eventType)
+    {
+        var archivedInvoice = new ArchivedInvoice();
+        archivedInvoice.Initialize(eventType.InvoiceData);
+
+        m_InvoiceDataList.Add(archivedInvoice);
     }
 
     public void OpenInvoice()

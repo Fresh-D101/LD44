@@ -715,6 +715,7 @@ GameObject:
   - component: {fileID: 161269609304085354}
   - component: {fileID: 161269609304085352}
   - component: {fileID: 161269609304085355}
+  - component: {fileID: 432599272771661719}
   m_Layer: 5
   m_Name: Invoice Info box
   m_TagString: Untagged
@@ -780,6 +781,27 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &432599272771661719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161269609304085357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766ad79f3a6eca449ac8b4d5cc27f8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InvoiceData:
+    m_Reason: {fileID: 0}
+    m_Price: 0
+    m_IsSigned: 0
+    m_IsExtended: 0
+    invoiceDesignType: 0
+  m_ExtendButton: {fileID: 161269609431407673}
+  m_Duration: 0
+  m_Price: 0
 --- !u!1 &161269609431407675
 GameObject:
   m_ObjectHideFlags: 0

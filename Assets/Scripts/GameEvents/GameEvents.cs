@@ -132,4 +132,13 @@ namespace GameEvents
         }
     }
 
+    public class GameEvent_InvoiceArchived : GameEvent
+    {
+        public InvoiceData InvoiceData;
+
+        public GameEvent_InvoiceArchived(InvoiceData invoiceData)
+        {
+            this.InvoiceData = invoiceData;
+        }
+    }
 }

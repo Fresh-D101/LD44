@@ -15,8 +15,10 @@ public class ArchivedInvoice : MonoBehaviour,
     {
         m_InvoiceData = inputInvoiceData;
 
-        m_Duration = m_InvoiceData.Duration;
+        m_Duration = m_InvoiceData.CurrentDuration;
         m_Price = m_InvoiceData.Price;
+
+        UpdateUI();
     }
 
     private void OnEnable()
@@ -36,12 +38,19 @@ public class ArchivedInvoice : MonoBehaviour,
 
     public void ExtendInvoice()
     {
-
+        
     }
 
     private void UpdateUI()
     {
-        m_ExtendButton.enabled = !m_InvoiceData.IsExtended;
+        if (PlayerData.Instance.GetAvailableExtendCount() <= 0)
+        {
+            m_ExtendButton.enabled = false;
+        }
+        else
+        {
+            m_ExtendButton.enabled = !m_InvoiceData.IsExtended;
+        }
     }
 
     public void OnGameEvent(GameEvent_DayElapsed eventType)
