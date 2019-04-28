@@ -14,6 +14,10 @@
             <e p="ICatastrophe.cs" t="Include" />
           </e>
           <e p="Debug_AddInvoice.cs" t="Include" />
+          <e p="GameEvents" t="Include">
+            <e p="GameEventManager.cs" t="Include" />
+            <e p="GameEvents.cs" t="Include" />
+          </e>
           <e p="GameManager.cs" t="Include" />
           <e p="Invoice" t="Include">
             <e p="Invoice.cs" t="Include" />
