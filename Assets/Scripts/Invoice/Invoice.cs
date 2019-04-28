@@ -65,7 +65,15 @@ public class Invoice : MonoBehaviour
 
     private void UpdateUI()
     {
-        m_extendButton.interactable = !m_InvoiceData.IsExtended;
+        if (PlayerData.Instance.GetAvailableExtendCount() <= 0)
+        {
+            m_extendButton.interactable = false;
+        }
+        else
+        {
+            m_extendButton.interactable = !m_InvoiceData.IsExtended; 
+        }
+
         m_PayButton.interactable = PlayerData.Instance.CurrentMoney >= m_InvoiceData.Price;
     }
 
@@ -87,8 +95,7 @@ public class Invoice : MonoBehaviour
 
     public void ExtendInvoiceDuration()
     {
-
-
+        PlayerData.Instance.UseUpExtend();
         m_InvoiceData.IsExtended = true;
     }
 

@@ -18,7 +18,7 @@ public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_Day
     private static readonly float m_timeScale = 2f;
     private int m_currentMoney = 0;
     private int m_availableExtends;
-    private int currentExtendProgress = 0;
+    private int m_currentExtendProgress = 0;
     private readonly List<InvoiceData> m_unopenedInvoices = new List<InvoiceData>();
     private readonly List<InvoiceData> m_archivedInvoices = new List<InvoiceData>();
     
@@ -46,12 +46,16 @@ public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_Day
         this.neededExtendProgress = neededExtendProgress;
     }
 
-
     public void UseUpExtend()
     {
         m_availableExtends--;
         
-        //Call Event
+        GameEventManager.TriggerEvent(new GameEvent_UsedExtend());
+    }
+
+    public int GetAvailableExtendCount()
+    {
+        return m_availableExtends;
     }
 
     public void UpdateExtendProgress()
@@ -60,15 +64,16 @@ public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_Day
         {
             return;
         }
+        m_currentExtendProgress++;
 
-        currentExtendProgress++;
-
-        if (currentExtendProgress >= neededExtendProgress)
+        if (m_currentExtendProgress >= neededExtendProgress)
         {
-            currentExtendProgress = 0;
-            //CallEvent
+            m_currentExtendProgress = 0;
+            GameEventManager.TriggerEvent(new GameEvent_GainedExtend());
             m_availableExtends++;
         }
+        
+        GameEventManager.TriggerEvent(new GameEvent_UpdatedExtendProgress());
     }
     
     public List<InvoiceData> GetArchivedInvoices()

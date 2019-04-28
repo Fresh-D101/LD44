@@ -24,6 +24,9 @@
           </e>
           <e p="GameLoader.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Hand" t="Include">
+            <e p="HandTracker.cs" t="Include" />
+          </e>
           <e p="Invoice" t="Include">
             <e p="Invoice.cs" t="Include" />
             <e p="InvoiceData.cs" t="Include" />

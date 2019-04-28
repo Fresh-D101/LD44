@@ -48,6 +48,7 @@ namespace GameEvents
     public class GameEvent_HourElapsed : GameEvent { }
     public class GameEvent_DayElapsed : GameEvent { }
     public class GameEvent_UsedExtend : GameEvent { }
+    public class GameEvent_UpdatedExtendProgress : GameEvent { }
     public class GameEvent_GainedExtend : GameEvent { }
 
     //---------------------------------------------------------------------------------------------------
