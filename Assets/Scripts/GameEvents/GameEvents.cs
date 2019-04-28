@@ -47,6 +47,9 @@ namespace GameEvents
     public class GameEvent_FinishLevel : GameEvent { }
     public class GameEvent_HourElapsed : GameEvent { }
     public class GameEvent_DayElapsed : GameEvent { }
+    public class GameEvent_UsedExtend : GameEvent { }
+    public class GameEvent_UpdatedExtendProgress : GameEvent { }
+    public class GameEvent_GainedExtend : GameEvent { }
 
     //---------------------------------------------------------------------------------------------------
 
@@ -117,6 +120,15 @@ namespace GameEvents
         public override bool isValid()
         {
             return collider != null && velocity != null;
+        }
+    }
+
+    public class GameEvent_InvoiceOpen : GameEvent
+    {
+        public bool IsOpen;
+        public GameEvent_InvoiceOpen(bool isOpen)
+        {
+            IsOpen = isOpen;
         }
     }
 

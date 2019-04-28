@@ -7,6 +7,10 @@
     <e p="D:\LudumDare\LD44" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="codeandweb.com" t="Include">
+          <e p="Readme.txt" t="Include" />
+        </e>
+        <e p="Envelope.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Catastrope" t="Include">
             <e p="Catastrophe.cs" t="Include" />
@@ -18,7 +22,11 @@
             <e p="GameEventManager.cs" t="Include" />
             <e p="GameEvents.cs" t="Include" />
           </e>
+          <e p="GameLoader.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Hand" t="Include">
+            <e p="HandTracker.cs" t="Include" />
+          </e>
           <e p="Invoice" t="Include">
             <e p="Invoice.cs" t="Include" />
             <e p="InvoiceData.cs" t="Include" />

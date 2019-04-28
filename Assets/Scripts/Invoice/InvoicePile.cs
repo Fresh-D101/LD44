@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class InvoicePile : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class InvoicePile : MonoBehaviour
     private Button m_button;
     private PlayerData m_data;
     private float m_timer;
+    [SerializeField]
+    private Envelope m_envelope;
+    
 
     [SerializeField] 
     private Sprite m_emptyTray, m_singleLetter, m_doubleLetter, m_multipleLetter;
@@ -19,6 +24,8 @@ public class InvoicePile : MonoBehaviour
         m_data = PlayerData.Instance;
         m_image = GetComponent<Image>();
         m_button = GetComponent<Button>();
+        
+        UpdateUI();
         
         Invoke(nameof(GenerateNewInvoice), 2f);
     }
@@ -58,21 +65,28 @@ public class InvoicePile : MonoBehaviour
     {
         var invoiceData = m_data.GetOldestUnopenedInvoiceData();
         var prefab = GameManager.Instance.GetInvoicePrefab(out var designType);
+        var invoiceObject = Instantiate(prefab, transform.parent.position, Quaternion.identity, transform.parent);
+        invoiceObject.SetActive(false);
+        
         invoiceData.InvoiceDesignType = designType;
 
-        var invoiceComponent = prefab.GetComponent<Invoice>();
+        var invoiceComponent = invoiceObject.GetComponent<Invoice>();
         if (invoiceComponent == null)
         {
 
 #if DEBUG
             Debug.LogWarning("The Invoice Template Prefabs must have an Invoice Script attached");
-            invoiceComponent = prefab.AddComponent<Invoice>();
+            invoiceComponent = invoiceObject.AddComponent<Invoice>();
 #else
             return;
 #endif
         }
         
         invoiceComponent.InvoiceData = invoiceData;
+        
+        m_envelope.OpenEnvelope(invoiceComponent);
+        
+        UpdateUI();
     }
 
     private void GenerateNewInvoice()
