@@ -30,10 +30,40 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
             return;
         }
 
+        m_Button.onClick.RemoveAllListeners();
+
+        if (m_CatastropheData.IsUnlocked)
+        {
+            m_Icon.sprite = m_CatastropheData.UnlockedIcon;
+            m_Kills.text = $"Deaths: {m_CatastropheData.MinimumKills} - {m_CatastropheData.MaximumKills}";
+
+            m_Button.onClick.AddListener(StartCatastrophe);
+        }
+        else
+        {
+            m_Icon.sprite = m_CatastropheData.LockedIcon;
+            m_Kills.text = $"Price: {m_CatastropheData.Price}";
+
+            m_Button.onClick.AddListener(UnlockButton);
+        }
+        
         m_ActivationBar.maxValue = m_CatastropheData.Duration * PlayerData.TimeScale;
         m_AppName.text = m_CatastropheData.CatastropheName;
-        m_Kills.text = $"Kills: {m_CatastropheData.MinimumKills} - {m_CatastropheData.MaximumKills}";
         m_Cooldown.text = null;
+    }
+
+    public void UnlockButton()
+    {
+        if (PlayerData.Instance.CurrentMoney >= m_CatastropheData.Price)
+        {
+            PlayerData.Instance.SubstractMoney(m_CatastropheData.Price);
+            
+            m_Button.onClick.RemoveListener(UnlockButton);
+            m_Button.onClick.AddListener(StartCatastrophe);
+
+            m_Icon.sprite = m_CatastropheData.UnlockedIcon;
+            m_Kills.text = $"Deaths: {m_CatastropheData.MinimumKills} - {m_CatastropheData.MaximumKills}";
+        }
     }
 
     public void StartCatastrophe()
