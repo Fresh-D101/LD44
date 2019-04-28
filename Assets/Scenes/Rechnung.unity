@@ -798,6 +798,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1692695002059577875, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
+        type: 3}
+      propertyPath: m_Name
+      value: Catastrophe List
+      objectReference: {fileID: 0}
     - target: {fileID: 148780198625229142, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
         type: 3}
       propertyPath: m_AnchorMin.y

@@ -8,6 +8,6 @@ public class Catastrophe : MonoBehaviour, ICatastrophe
 
     public void StartCatastrophe()
     {
-        throw new System.NotImplementedException();
+        Debug.LogWarning("Scoopidi Whoop. Whoopidi Scoop. Scipoop poopidipoop.");
     }
 }
