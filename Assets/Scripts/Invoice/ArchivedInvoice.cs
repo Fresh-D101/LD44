@@ -1,0 +1,51 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using GameEvents;
+
+public class ArchivedInvoice : MonoBehaviour,
+    IGameEventListener<GameEvent_DayElapsed>
+{
+    [SerializeField] private InvoiceData m_InvoiceData = null;
+    [SerializeField] private Button m_ExtendButton = null;
+    [Space]
+    [SerializeField] private int m_Duration = 0;
+    [SerializeField] private int m_Price = 0;
+
+    public void Initialize(InvoiceData inputInvoiceData)
+    {
+        m_InvoiceData = inputInvoiceData;
+
+        m_Duration = m_InvoiceData.Duration;
+        m_Price = m_InvoiceData.Price;
+    }
+
+    private void OnEnable()
+    {
+        this.EventStartListening<GameEvent_DayElapsed>();
+    }
+
+    private void OnDisable()
+    {
+        this.EventStopListening<GameEvent_DayElapsed>();
+    }
+
+    public void ViewInvoice()
+    {
+
+    }
+
+    public void ExtendInvoice()
+    {
+
+    }
+
+    private void UpdateUI()
+    {
+        m_ExtendButton.enabled = !m_InvoiceData.IsExtended;
+    }
+
+    public void OnGameEvent(GameEvent_DayElapsed eventType)
+    {
+        throw new System.NotImplementedException();
+    }
+}
