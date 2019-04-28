@@ -1,18 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Runtime.Serialization;
 using UnityEngine;
+using GameEvents;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    
+
     ////Prefabs////
     [SerializeField] private GameObject InvoiceDesignTemplateWhite;
     [SerializeField] private GameObject InvoiceDesignTemplateRed;
     [SerializeField] private GameObject InvoiceDesignTemplateBlue;
-    
+
     private PlayerData m_playerData;
     
     private static List<ISerialize> MasterData = new List<ISerialize>();
@@ -21,6 +20,8 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         m_playerData = new PlayerData(2000);
+
+        InvokeRepeating("HourElapser", PlayerData.TimeScale, PlayerData.TimeScale);
     }
 
     private static void Save()
@@ -39,4 +40,8 @@ public class GameManager : MonoBehaviour
         return InvoiceDesignTemplateWhite;
     }
     
+    public void HourElapser()
+    {
+        GameEventManager.TriggerEvent(new GameEvent_HourElapsed());
+    }
 }

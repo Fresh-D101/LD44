@@ -14,6 +14,7 @@ public class PlayerData : ISubject, ISerialize
     
     public static PlayerData Instance;
 
+    private static readonly float m_timeScale = 2f;
     private int m_currentMoney = 0;
     private readonly List<InvoiceData> m_unopenedInvoices = new List<InvoiceData>();
     private readonly List<InvoiceData> m_archivedInvoices = new List<InvoiceData>();
@@ -62,6 +63,8 @@ public class PlayerData : ISubject, ISerialize
             NotifyMoneyUpdate();
         }
     }
+
+    public static float TimeScale => m_timeScale;
 
     public void AddMoney(int amount)
     {

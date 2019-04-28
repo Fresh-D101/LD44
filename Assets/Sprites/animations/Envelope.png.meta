@@ -1,0 +1,1037 @@
+fileFormatVersion: 2
+guid: c61a46a497328444586f9a56a5e47a43
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6244425840944140638
+    second: biglul0001
+  - first:
+      213: 3536918996389881673
+    second: biglul0002
+  - first:
+      213: -6192764997011758794
+    second: biglul0003
+  - first:
+      213: 183895751312498904
+    second: biglul0004
+  - first:
+      213: 2992446123400022471
+    second: biglul0005
+  - first:
+      213: 815938384102137329
+    second: biglul0006
+  - first:
+      213: 2917927295856154846
+    second: biglul0007
+  - first:
+      213: -8895965755934811457
+    second: biglul0008
+  - first:
+      213: 1253513302420095088
+    second: biglul0009
+  - first:
+      213: 5128208713779875283
+    second: biglul0010
+  - first:
+      213: -4114891087780165520
+    second: biglul0011
+  - first:
+      213: -143166526343584525
+    second: biglul0012
+  - first:
+      213: -4947744843636931596
+    second: biglul0013
+  - first:
+      213: -4084504320407928609
+    second: biglul0014
+  - first:
+      213: 4912492047391572740
+    second: biglul0015
+  - first:
+      213: -5430112489145208754
+    second: biglul0016
+  - first:
+      213: 4048985800072215555
+    second: biglul0017
+  - first:
+      213: 3893353220828708805
+    second: biglul0018
+  - first:
+      213: 8554763728808388749
+    second: biglul0019
+  - first:
+      213: 245670279240936258
+    second: biglul0020
+  - first:
+      213: -1569005320639602059
+    second: biglul0021
+  - first:
+      213: -9140310883548143895
+    second: biglul0022
+  - first:
+      213: -6820738087308843473
+    second: biglul0023
+  - first:
+      213: -5737037952004306725
+    second: biglul0024
+  - first:
+      213: 6037715905464134637
+    second: biglul0025
+  - first:
+      213: -5305854025403754800
+    second: biglul0026
+  - first:
+      213: 5767765763885684193
+    second: biglul0027
+  - first:
+      213: 4966671204669695135
+    second: biglul0028
+  - first:
+      213: 1289336216257570321
+    second: biglul0029
+  - first:
+      213: 5372656531019850000
+    second: biglul0030
+  - first:
+      213: -7319796131476754918
+    second: biglul0031
+  - first:
+      213: -3725312613684969626
+    second: biglul0032
+  - first:
+      213: -1971742038003633721
+    second: biglul0033
+  - first:
+      213: 3531501363869073981
+    second: biglul0034
+  - first:
+      213: -4048484366345763772
+    second: biglul0035
+  - first:
+      213: -1130183753129605885
+    second: biglul0036
+  - first:
+      213: 2443701242140047206
+    second: biglul0037
+  - first:
+      213: 7153368049576440450
+    second: biglul0038
+  - first:
+      213: -8995173480071787948
+    second: biglul0039
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: biglul0001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28add15d1772c7a4b96e9ac4d56b69bb
+      internalID: 6244425840944140638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0002
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6eb1620fe77cb4b8efb22ca3bef797
+      internalID: 3536918996389881673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0003
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32374c916100c941bea42840847ce68
+      internalID: -6192764997011758794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0004
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147c219684d87324f83c58e6065d3e32
+      internalID: 183895751312498904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0005
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31cf034ca679ae4499809ae0cd86c39f
+      internalID: 2992446123400022471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0006
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021e73da61f168549960e8212e5f816e
+      internalID: 815938384102137329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0007
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd057115e6b76c04991e0b26de0f59bb
+      internalID: 2917927295856154846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0008
+      rect:
+        serializedVersion: 2
+        x: 4900
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e029bb64f4ae3f4384256f752d0a025
+      internalID: -8895965755934811457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0009
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773763f35a57ec4479ddedf132c1d242
+      internalID: 1253513302420095088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0010
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd254bfbe13672b458598183459a2e9c
+      internalID: 5128208713779875283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0011
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 3373
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b81b47650956845ba87f11ad5b9c16
+      internalID: -4114891087780165520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0012
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f76392772efa904885d47ddae09691f
+      internalID: -143166526343584525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0013
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974e8a5433745fe43abb764afa0bf0ca
+      internalID: -4947744843636931596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0014
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d91734408dda7e43aa69ad2e6652f67
+      internalID: -4084504320407928609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0015
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd2bf48fa0e6b3478af6c390fe0e44e
+      internalID: 4912492047391572740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0016
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8632fc927478e4aa50bb69fc11a196
+      internalID: -5430112489145208754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0017
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69bb038ee5d9a54498193ee0fdff1f63
+      internalID: 4048985800072215555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0018
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c762f4f9f3ee056429e7dfbe40625f50
+      internalID: 3893353220828708805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0019
+      rect:
+        serializedVersion: 2
+        x: 4900
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fc20881664446419038b703ba1b6fd
+      internalID: 8554763728808388749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0020
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37dcd979d6940dd4084d0e2cdc4062d6
+      internalID: 245670279240936258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0021
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8711175773a6903418fe54abede89b37
+      internalID: -1569005320639602059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0022
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 2650
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af17407b46e988c47a468e8d1f834065
+      internalID: -9140310883548143895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0023
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3871ad504b5664c40af1b2652b792113
+      internalID: -6820738087308843473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0024
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0467a2c65e41dc468e0c00f3bffd2d2
+      internalID: -5737037952004306725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0025
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9523c897603af7468f8d301367bfe36
+      internalID: 6037715905464134637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0026
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0def6fe13c4b414b84084e4f74f1daa
+      internalID: -5305854025403754800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0027
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86283245cc9e1784ca1d07420ad3a77c
+      internalID: 5767765763885684193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0028
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb77bdb7019a71c41bf1a209083741cd
+      internalID: 4966671204669695135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0029
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201faa484086973428bd6123f6ea69ee
+      internalID: 1289336216257570321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0030
+      rect:
+        serializedVersion: 2
+        x: 4900
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1677351dc0f2d4d8bdb14ad2187d4b
+      internalID: 5372656531019850000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0031
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493f590de1994364bb078674fc390c6b
+      internalID: -7319796131476754918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0032
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4226eb5f985581b43b590c72460560f7
+      internalID: -3725312613684969626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0033
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 1927
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fa34e2e15019744b294d480570a8b4
+      internalID: -1971742038003633721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0034
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1204
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05cac2a7bc7a2e94f91381f6b94e4fcb
+      internalID: 3531501363869073981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0035
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1204
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88225d975d7b8fc40a13d91dc2f5f01b
+      internalID: -4048484366345763772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0036
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1204
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b0b2910f4654b4fba94cd97e3d13c2
+      internalID: -1130183753129605885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0037
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1204
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46405943bf5b96499a7d62640c13c29
+      internalID: 2443701242140047206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0038
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1204
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7385481e43898b43be6efddb889af95
+      internalID: 7153368049576440450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biglul0039
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1204
+        width: 700
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1222450594a4c418268e1c1ccb6fb6
+      internalID: -8995173480071787948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3c18ea33f7f14ca47ac4d45cffff78f7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
