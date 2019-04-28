@@ -256,6 +256,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1895418044ca6e74fa9b5373068d7226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InvoiceDesignTemplateWhite: {fileID: 0}
+  InvoiceDesignTemplateRed: {fileID: 0}
+  InvoiceDesignTemplateBlue: {fileID: 0}
 --- !u!4 &414122444
 Transform:
   m_ObjectHideFlags: 0
@@ -491,6 +494,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CatastropheData: {fileID: 11400000, guid: 30a3db262daf8a6458b9db2b513cac72, type: 2}
+  m_AppName: {fileID: 0}
+  m_Kills: {fileID: 0}
+  m_Cooldown: {fileID: 0}
+  m_Icon: {fileID: 0}
 --- !u!1001 &1908523709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -658,6 +665,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7249651604783847444, guid: d14134e0a34ed3f4fba491ff57147d59,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d14134e0a34ed3f4fba491ff57147d59, type: 3}
 --- !u!224 &1908523710 stripped
@@ -677,6 +689,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Catastrophe Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1692695002059577875, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
+        type: 3}
+      propertyPath: m_Name
+      value: Catastrophe List
       objectReference: {fileID: 0}
     - target: {fileID: 8628174388313441130, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
         type: 3}
@@ -797,11 +814,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1692695002059577875, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
-        type: 3}
-      propertyPath: m_Name
-      value: Catastrophe List
       objectReference: {fileID: 0}
     - target: {fileID: 148780198625229142, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
         type: 3}
@@ -2887,6 +2899,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790990111117075973, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.925246
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790990111117075973, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.6462264
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790990111117075973, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8fd46c5e38ce3b4cbe680797552e0f4, type: 3}
