@@ -9,6 +9,6 @@
 
     public interface IDataObserver
     {
-        void UpdateMoney(float moneyAmount);
+        void UpdateMoney(int moneyAmount);
     }
 }

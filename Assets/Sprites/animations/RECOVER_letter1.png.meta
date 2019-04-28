@@ -1,0 +1,797 @@
+fileFormatVersion: 2
+guid: ee5665f2433ab8d4abd003ada068ddb3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -192371356279411467
+    second: RECOVER_letter1_0
+  - first:
+      213: -2929797023436193628
+    second: RECOVER_letter1_1
+  - first:
+      213: -8803138146862929994
+    second: RECOVER_letter1_2
+  - first:
+      213: 8524555014078910502
+    second: RECOVER_letter1_3
+  - first:
+      213: 7048305380399965053
+    second: RECOVER_letter1_4
+  - first:
+      213: 4808135212291129022
+    second: RECOVER_letter1_5
+  - first:
+      213: 238221833644504555
+    second: RECOVER_letter1_6
+  - first:
+      213: 8676333482070544520
+    second: RECOVER_letter1_7
+  - first:
+      213: 1646142392064478196
+    second: RECOVER_letter1_8
+  - first:
+      213: -7417756556257193940
+    second: RECOVER_letter1_9
+  - first:
+      213: -3918829224229864694
+    second: RECOVER_letter1_10
+  - first:
+      213: 3826546726070580328
+    second: RECOVER_letter1_11
+  - first:
+      213: 505637576396555640
+    second: RECOVER_letter1_12
+  - first:
+      213: -498962118481320211
+    second: RECOVER_letter1_13
+  - first:
+      213: 2458420467750857675
+    second: RECOVER_letter1_14
+  - first:
+      213: 1265838463309606563
+    second: RECOVER_letter1_15
+  - first:
+      213: 8681669408716581552
+    second: RECOVER_letter1_16
+  - first:
+      213: -4716506787836635808
+    second: RECOVER_letter1_17
+  - first:
+      213: -1212429455939522279
+    second: RECOVER_letter1_18
+  - first:
+      213: -7859291759190036892
+    second: RECOVER_letter1_19
+  - first:
+      213: -2120404240502493425
+    second: RECOVER_letter1_20
+  - first:
+      213: 1647265218825720593
+    second: RECOVER_letter1_21
+  - first:
+      213: -5790311003167569597
+    second: RECOVER_letter1_22
+  - first:
+      213: -8482403580155205935
+    second: RECOVER_letter1_23
+  - first:
+      213: -7367912536076732002
+    second: RECOVER_letter1_24
+  - first:
+      213: 4861697610406102974
+    second: RECOVER_letter1_25
+  - first:
+      213: 8841634485557275320
+    second: RECOVER_letter1_26
+  - first:
+      213: 2358071646339443458
+    second: RECOVER_letter1_27
+  - first:
+      213: -2544308253832407885
+    second: RECOVER_letter1_28
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RECOVER_letter1_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3643
+        width: 610
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d643934d857117a4d85caf89db6661b1
+      internalID: -192371356279411467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_1
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 3643
+        width: 529
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01e1c0fec1681440b2b5d79c6a3fd9c
+      internalID: -2929797023436193628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_2
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 3643
+        width: 442
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12ba3da621c7544ebffc326cb703ad8
+      internalID: -8803138146862929994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_3
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 3643
+        width: 354
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8813eafd52f6e9249bfb206e23101685
+      internalID: 8524555014078910502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_4
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 3643
+        width: 270
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b277ec49a68475541a126bdb719d2ed5
+      internalID: 7048305380399965053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_5
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 3643
+        width: 186
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85995581279a3b046b07dfb19b2996cb
+      internalID: 4808135212291129022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_6
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 3643
+        width: 100
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bf6f6273cf27746af85d2dd9a64c2c
+      internalID: 238221833644504555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_7
+      rect:
+        serializedVersion: 2
+        x: 2757
+        y: 3629
+        width: 14
+        height: 445
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f8cfaa98755ea458b13b0797281649
+      internalID: 8676333482070544520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_8
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 3627
+        width: 20
+        height: 454
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221340694ba80284385b8c4ddd26d4b4
+      internalID: 1646142392064478196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_9
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 3641
+        width: 112
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2942e7a4e7570604ca4ee4b3f34d64d8
+      internalID: -7417756556257193940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_10
+      rect:
+        serializedVersion: 2
+        x: 3127
+        y: 3641
+        width: 206
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8b5d6c6030d914cbbc755619fd3cd6
+      internalID: -3918829224229864694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_11
+      rect:
+        serializedVersion: 2
+        x: 3367
+        y: 3641
+        width: 302
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc8cbeecabbc3b478c002d0e3eec635
+      internalID: 3826546726070580328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3145
+        width: 396
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84031874cb5a3164da6088049aee7988
+      internalID: 505637576396555640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_13
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 3145
+        width: 490
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c723825a2df8cca4381e25bff6642d82
+      internalID: -498962118481320211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_14
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 3145
+        width: 586
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9241eedcf4eb14409970100cc986a31
+      internalID: 2458420467750857675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_15
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 3145
+        width: 681
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358f536e2fe8fb24f93701e5df037c10
+      internalID: 1265838463309606563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_16
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 3145
+        width: 645
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f8b1da02d9d984c8c5f323e121d4a9
+      internalID: 8681669408716581552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_17
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 3145
+        width: 606
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347d1d7e14ca6ad4a82cd720ebacc846
+      internalID: -4716506787836635808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2647
+        width: 606
+        height: 444
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd52b3387572538469e53fbb2b921a25
+      internalID: -1212429455939522279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_19
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 2647
+        width: 606
+        height: 444
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b03266c4404efe4dbb0dd7009afa3e9
+      internalID: -7859291759190036892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_20
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 2643
+        width: 606
+        height: 462
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107f71495e52cd7489aedfcb998c657d
+      internalID: -2120404240502493425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_21
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 2559
+        width: 604
+        height: 546
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66159eb71224ff46b23dda90a9ed553
+      internalID: 1647265218825720593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_22
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 2475
+        width: 606
+        height: 630
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e8439dcee0c964a9368443691ef3b6
+      internalID: -5790311003167569597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_23
+      rect:
+        serializedVersion: 2
+        x: 3275
+        y: 2391
+        width: 604
+        height: 714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ba4d5e9ce49c6418ce60d171881b9b
+      internalID: -8482403580155205935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1697
+        width: 606
+        height: 654
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1020e0e2c547da84ca46e19f56106754
+      internalID: -7367912536076732002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_25
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1757
+        width: 607
+        height: 594
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d207a33f8a61954b8f5ebd75fab2249
+      internalID: 4861697610406102974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_26
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 1731
+        width: 606
+        height: 622
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2b08f1fc6c00c40926d53837960b8b
+      internalID: 8841634485557275320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_27
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1703
+        width: 604
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030a4c678b4855b4f90a14d3eefb5f66
+      internalID: 2358071646339443458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RECOVER_letter1_28
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1703
+        width: 606
+        height: 648
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75ade2bfa6b39c49943f684f71f6439
+      internalID: -2544308253832407885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d237cf10160326a4b9fc76b590dc2122
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
