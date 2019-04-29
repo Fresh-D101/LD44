@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 4558274118626823687}
   - component: {fileID: 1417592511366960158}
   - component: {fileID: 8238705228897964410}
+  - component: {fileID: 8598645317649099833}
   m_Layer: 5
   m_Name: Signature Animation
   m_TagString: Untagged
@@ -251,6 +252,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8598645317649099833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639415591441966267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef32d035b86db74ca85038ec1df0be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2278448270127452621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,7 +1159,6 @@ GameObject:
   - component: {fileID: 787582365272824021}
   - component: {fileID: 415987366981551669}
   - component: {fileID: 2091692033598876119}
-  - component: {fileID: 4983076044035734883}
   m_Layer: 5
   m_Name: Signature Sprite
   m_TagString: Untagged
@@ -1210,25 +1222,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!95 &4983076044035734883
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6771769199726567228}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5857729de3f769042b691ae20629469d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7326633120545117340
 GameObject:
   m_ObjectHideFlags: 0

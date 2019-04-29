@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
 using Cursor = UnityEngine.UIElements.Cursor;
 
-public class Invoice : MonoBehaviour
+public class Invoice : MonoBehaviour, IGameEventListener<GameEvent_SignatureDone>
 {
     [SerializeField] private InvoiceData m_InvoiceData = null;
     [Space]
@@ -126,14 +126,25 @@ public class Invoice : MonoBehaviour
                 GameEventManager.TriggerEvent(new GameEvent_InvoiceClosed());
             }
         }
-
+        
+        GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(false));
+        
         GameManager.Instance.ResetInvoice(InvoiceData.InvoiceDesignType);
     }
-
-    public void OnSignatureDone()
+    
+    public void OnGameEvent(GameEvent_SignatureDone eventType)
     {
         PlayerData.Instance.SubstractMoney(InvoiceData.Price);
-        Invoke(nameof(CloseInvoice), 1.5f);
+        Invoke(nameof(CloseInvoice), 0.8f);
     }
 
+    private void OnEnable()
+    {
+        this.EventStartListening();
+    }
+
+    private void OnDisable()
+    {
+        this.EventStopListening();
+    }
 }

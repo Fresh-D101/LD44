@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace UI
 {
-    public class PlayerHUD : MonoBehaviour, IDataObserver, IGameEventListener<GameEvent_InvoiceOpen>
+    public class PlayerHUD : MonoBehaviour, IDataObserver, IGameEventListener<GameEvent_ContextMenuOpen>
     {
         [SerializeField] private TextMeshProUGUI m_currentMoneyText = null;
 
@@ -64,7 +64,7 @@ namespace UI
             //m_currentMoneyText.color = CurrentMoney > 0 ? Color.green : Color.red;
         }
 
-        public void OnGameEvent(GameEvent_InvoiceOpen eventType)
+        public void OnGameEvent(GameEvent_ContextMenuOpen eventType)
         {
             InvoicePanel.SetActive(eventType.IsOpen);
         }

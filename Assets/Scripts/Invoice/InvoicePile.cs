@@ -103,13 +103,7 @@ public class InvoicePile : MonoBehaviour, IGameEventListener<GameEvent_InvoiceCl
         var invoiceComponent = GameManager.InvoiceFactory.CreateNewInvoice(invoiceData);
         
         invoiceComponent.Initialize(invoiceData, true);
-
-        var invoiceTransform = invoiceComponent.gameObject.transform;
-        
-        invoiceTransform.SetParent(transform.parent.transform);
-        invoiceTransform.localPosition = Vector3.zero;
-        invoiceTransform.localScale = Vector3.one;
-        
+      
         m_envelope.OpenEnvelope(invoiceComponent);
         
         UpdateUI();

@@ -249,9 +249,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &3189261670209345180 stripped
+--- !u!114 &762414710 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3189261670209345180, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
+  m_CorrespondingSourceObject: {fileID: 5333022273128867988, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
     type: 3}
   m_PrefabInstance: {fileID: 7367953962079072848}
   m_PrefabAsset: {fileID: 0}
@@ -261,12 +261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc54e4fda57eadd46a654c12ade1fc1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &3625437383726097164 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3625437383726097164, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7367953962079072848}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7367953962079072848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -343,7 +337,7 @@ PrefabInstance:
         type: 3}
       propertyPath: InvoicePanel
       value: 
-      objectReference: {fileID: 3625437383726097164}
+      objectReference: {fileID: 0}
     - target: {fileID: 7367953961002322167, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -378,7 +372,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_envelope
       value: 
-      objectReference: {fileID: 3189261670209345180}
+      objectReference: {fileID: 762414710}
     - target: {fileID: 7367953962205259699, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
         type: 3}
       propertyPath: m_openNextDialogue

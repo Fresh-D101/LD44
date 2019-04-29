@@ -19,8 +19,15 @@ public class Envelope : MonoBehaviour
    public void OpenEnvelope(Invoice invoice)
    {
       m_invoiceToOpen = invoice;
+      
+      //Set up the invoices transform 
+      var invoiceTransform = invoice.gameObject.transform;
+      invoiceTransform.SetParent(transform.parent);
+      invoiceTransform.localPosition = Vector3.zero;
+      invoiceTransform.localScale = Vector3.one;
+      
       gameObject.SetActive(true);
-      GameEventManager.TriggerEvent(new GameEvent_InvoiceOpen(true));
+      GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(true));
       m_animator.SetTrigger(OpenEnvelope1);
    }
 

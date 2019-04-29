@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using UnityEngine;
 using GameEvents;
 
-public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_MenuOpen>, IGameEventListener<GameEvent_InvoiceOpen>
+public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_ContextMenuOpen>
 {
     public static GameManager Instance;
 
@@ -72,7 +72,10 @@ public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_MenuOpen>
     {
         Instance = this;
         
+        this.EventStartListening();
+        
         Cursor.SetCursor(m_cursor, new Vector2(0.25f, 0f), CursorMode.ForceSoftware);
+        Cursor.visible = false;
         m_playerData = new PlayerData(m_initialMoney, m_maxExtends, m_neededExtendProgress);
 
         SetUpPool();
@@ -114,14 +117,9 @@ public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_MenuOpen>
         GameEventManager.TriggerEvent(new GameEvent_HourElapsed());
     }
 
-    public void OnGameEvent(GameEvent_MenuOpen eventType)
+    public void OnGameEvent(GameEvent_ContextMenuOpen eventType)
     {
         Cursor.visible = eventType.IsOpen;
-    }
-
-    public void OnGameEvent(GameEvent_InvoiceOpen eventType)
-    {
-        throw new NotImplementedException();
     }
 
     public void ResetInvoice(EInvoiceDesignType designType)
@@ -140,5 +138,10 @@ public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_MenuOpen>
         invoice.InvoiceData = null;
         invoice.Animator.SetTrigger(Exit);
         objectToReset.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        this.EventStopListening();
     }
 }

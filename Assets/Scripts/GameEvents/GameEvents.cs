@@ -51,6 +51,7 @@ namespace GameEvents
     public class GameEvent_UpdatedExtendProgress : GameEvent { }
     public class GameEvent_GainedExtend : GameEvent { }
     public class GameEvent_InvoiceClosed : GameEvent { }
+    public class GameEvent_SignatureDone : GameEvent { }
     
 
     //---------------------------------------------------------------------------------------------------
@@ -125,24 +126,15 @@ namespace GameEvents
         }
     }
 
-    public class GameEvent_InvoiceOpen : GameEvent
+    public class GameEvent_ContextMenuOpen : GameEvent
     {
         public bool IsOpen;
-        public GameEvent_InvoiceOpen(bool isOpen)
+        public GameEvent_ContextMenuOpen(bool isOpen)
         {
             IsOpen = isOpen;
         }
     }
     
-    public class GameEvent_MenuOpen : GameEvent
-    {
-        public bool IsOpen;
-        public GameEvent_MenuOpen(bool isOpen)
-        {
-            IsOpen = isOpen;
-        }
-    }
-
     public class GameEvent_InvoiceArchived : GameEvent
     {
         public InvoiceData InvoiceData;

@@ -10,7 +10,6 @@
         <e p="codeandweb.com" t="Include">
           <e p="Readme.txt" t="Include" />
         </e>
-        <e p="Envelope.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Catastrope" t="Include">
             <e p="Catastrophe.cs" t="Include" />
@@ -29,6 +28,7 @@
           </e>
           <e p="Invoice" t="Include">
             <e p="ArchivedInvoice.cs" t="Include" />
+            <e p="Envelope.cs" t="Include" />
             <e p="Invoice Book" t="Include">
               <e p="InvoiceBook.cs" t="Include" />
             </e>
@@ -36,6 +36,7 @@
             <e p="InvoiceData.cs" t="Include" />
             <e p="InvoicePile.cs" t="Include" />
             <e p="InvoiceReasons.cs" t="Include" />
+            <e p="SignatureHelper.cs" t="Include" />
           </e>
           <e p="Menü" t="Include">
             <e p="MenuHandler.cs" t="Include" />
