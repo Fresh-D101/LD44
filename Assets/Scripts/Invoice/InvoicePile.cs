@@ -50,9 +50,11 @@ public class InvoicePile : MonoBehaviour, IGameEventListener<GameEvent_InvoiceCl
         if (invoiceCount == 0)
         {
             m_image.sprite = m_emptyTray;
-            m_button.enabled = false;
+            m_button.interactable = false;
+            return;
         }
-        else if (invoiceCount > 1 && invoiceCount < 5)
+        
+        if (invoiceCount > 1 && invoiceCount < 5)
         {
             m_image.sprite = m_doubleLetter;
         }
@@ -65,7 +67,7 @@ public class InvoicePile : MonoBehaviour, IGameEventListener<GameEvent_InvoiceCl
             m_image.sprite = m_singleLetter;
         }
 
-        m_button.enabled = true;
+        m_button.interactable = true;
     }
 
     public void CloseDialogue()
@@ -101,9 +103,12 @@ public class InvoicePile : MonoBehaviour, IGameEventListener<GameEvent_InvoiceCl
         var invoiceComponent = GameManager.InvoiceFactory.CreateNewInvoice(invoiceData);
         
         invoiceComponent.Initialize(invoiceData, true);
+
+        var invoiceTransform = invoiceComponent.gameObject.transform;
         
-        invoiceComponent.gameObject.transform.SetParent(transform.parent.transform);
-        invoiceComponent.gameObject.transform.localPosition = Vector3.zero;
+        invoiceTransform.SetParent(transform.parent.transform);
+        invoiceTransform.localPosition = Vector3.zero;
+        invoiceTransform.localScale = Vector3.one;
         
         m_envelope.OpenEnvelope(invoiceComponent);
         

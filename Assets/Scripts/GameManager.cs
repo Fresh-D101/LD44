@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using UnityEngine;
 using GameEvents;
 
-public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_MenuOpen>
+public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_MenuOpen>, IGameEventListener<GameEvent_InvoiceOpen>
 {
     public static GameManager Instance;
 
@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_MenuOpen>
     private PlayerData m_playerData;
     
     private static List<ISerialize> MasterData = new List<ISerialize>();
+    private static readonly int Exit = Animator.StringToHash("Exit");
 
     public static class InvoiceFactory
     {
@@ -116,5 +117,28 @@ public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_MenuOpen>
     public void OnGameEvent(GameEvent_MenuOpen eventType)
     {
         Cursor.visible = eventType.IsOpen;
+    }
+
+    public void OnGameEvent(GameEvent_InvoiceOpen eventType)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void ResetInvoice(EInvoiceDesignType designType)
+    {
+        GameObject objectToReset;
+        switch (designType)
+        {
+            case EInvoiceDesignType.White: objectToReset = s_whiteInvoice;
+                break;
+            default: objectToReset = s_whiteInvoice;
+                break;
+        }
+        
+        objectToReset.transform.SetParent(transform);
+        var invoice = objectToReset.GetComponent<Invoice>();
+        invoice.InvoiceData = null;
+        invoice.Animator.SetTrigger(Exit);
+        objectToReset.SetActive(false);
     }
 }
