@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bf6ae6ff22a21499e278b2e711c2ce, type: 3}
   m_Name: Reason1
   m_EditorClassIdentifier: 
-  m_Text: "DIGII WARUM WURDE DAS GEL\xD6SCHT?!"
+  m_Text: You have been fined 500 Souls for damaging government property!

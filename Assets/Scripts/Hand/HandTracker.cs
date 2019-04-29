@@ -1,8 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using GameEvents;
 
-public class HandTracker : MonoBehaviour
+public class HandTracker : MonoBehaviour,
+    IGameEventListener<GameEvent_ContextMenuOpen>
 {
     [SerializeField] private Transform m_Target = null;
     [SerializeField] private Transform m_HandPivot = null;
@@ -14,8 +14,25 @@ public class HandTracker : MonoBehaviour
 
     [SerializeField] private Vector3 temp = Vector3.zero;
 
+    private bool canMove = true;
+
+    private void OnEnable()
+    {
+        this.EventStartListening<GameEvent_ContextMenuOpen>();
+    }
+
+    private void OnDisable()
+    {
+        this.EventStopListening<GameEvent_ContextMenuOpen>();
+    }
+
     private void Update()
     {
+        if (!canMove)
+        {
+            return;
+        }
+
         m_Target.transform.position = Input.mousePosition;
 
         m_HandPivot.localPosition = m_Target.localPosition;
@@ -34,5 +51,10 @@ public class HandTracker : MonoBehaviour
         Vector2 direction = new Vector2(target.position.x - objectToRotate.position.x, target.position.y - objectToRotate.position.y);
 
         objectToRotate.up = invertRotation ? -direction : direction;
+    }
+
+    public void OnGameEvent(GameEvent_ContextMenuOpen eventType)
+    {
+        canMove = !eventType.IsOpen;
     }
 }

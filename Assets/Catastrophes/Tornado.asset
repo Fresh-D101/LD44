@@ -16,7 +16,7 @@ MonoBehaviour:
   m_unlockedIcon: {fileID: 21300000, guid: f8af4a409c9cb4c47a30c211607839d7, type: 3}
   m_CatastropheName: Tornado
   m_IsUnlocked: 0
-  m_Price: 300
+  m_Price: 100
   m_Duration: 20
   m_Cooldown: 40
   m_MinimumKills: 15
