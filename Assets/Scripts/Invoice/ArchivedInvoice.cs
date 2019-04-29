@@ -55,7 +55,7 @@ public class ArchivedInvoice : MonoBehaviour,
         }
         else
         {
-            m_ExtendButton.enabled = !m_InvoiceData.IsExtended;
+            m_ExtendButton.enabled = !m_InvoiceData.IsPostponed;
         }
 
         m_DurationText.text = $"Due in: {m_Duration} days";

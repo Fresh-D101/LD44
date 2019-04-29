@@ -80,7 +80,7 @@ public class Invoice : MonoBehaviour
         }
         else
         {
-            m_postponeButton.interactable = !m_InvoiceData.IsExtended; 
+            m_postponeButton.interactable = !m_InvoiceData.IsPostponed; 
         }
 
         m_PayButton.interactable = PlayerData.Instance.CurrentMoney >= m_InvoiceData.Price;
@@ -94,7 +94,7 @@ public class Invoice : MonoBehaviour
 
     public void PayInvoice()
     {
-        if (!m_InvoiceData.IsExtended)
+        if (!m_InvoiceData.IsPostponed)
         {
             PlayerData.Instance.UpdateExtendProgress();
         }
@@ -102,10 +102,10 @@ public class Invoice : MonoBehaviour
         PlayerData.Instance.RemoveFromArchive(m_InvoiceData);
     }
 
-    public void ExtendInvoiceDuration()
+    public void PostponeInvoice()
     {
         PlayerData.Instance.UseUpExtend();
-        m_InvoiceData.IsExtended = true;
+        m_InvoiceData.IsPostponed = true;
     }
 
     private void CloseInvoice()
