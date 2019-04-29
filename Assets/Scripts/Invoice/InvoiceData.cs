@@ -28,7 +28,7 @@ public class InvoiceData
     public int Price { get => m_Price; set => m_Price = value; }
     public int TotalDuration { get => m_totalTotalDuration; }
     public int CurrentDuration{ get => m_currentDuration; set => m_currentDuration = value; }
-    public bool IsExtended { get => m_IsExtended; set => m_IsExtended = value; }
+    public bool IsPostponed { get => m_IsExtended; set => m_IsExtended = value; }
     public bool IsSigned { get => m_IsSigned; set => m_IsSigned = value; }
     public EInvoiceDesignType InvoiceDesignType { get => invoiceDesignType; set => invoiceDesignType = value; }
 
