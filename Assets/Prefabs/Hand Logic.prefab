@@ -163,6 +163,8 @@ MonoBehaviour:
   m_HandPivot: {fileID: 7122463420730179725}
   m_JacketPivot: {fileID: 7122463420607502697}
   m_JacketTarget: {fileID: 7122463420174752216}
+  m_xAxisMultiplies: 0.6
+  m_yAxisMultiplies: 0.9
   temp: {x: 0, y: 0, z: 0}
 --- !u!1 &7122463421439785746
 GameObject:
@@ -198,8 +200,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23, y: -365}
-  m_SizeDelta: {x: 1024, y: 1024}
+  m_AnchoredPosition: {x: 56, y: -421}
+  m_SizeDelta: {x: 824, y: 824}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7122463421439785759
 CanvasRenderer:
@@ -223,13 +225,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9528075b7ed8d674db005e1e337e7b01, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c24bac3ef1cebea428fbfd8fbb1f5d8f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -271,7 +273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 440, y: -1314}
+  m_AnchoredPosition: {x: 440, y: -1183}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7122463421563637434
@@ -344,7 +346,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 512}
-  m_SizeDelta: {x: 1024, y: 1024}
+  m_SizeDelta: {x: 824, y: 824}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7122463421938886248
 CanvasRenderer:
@@ -368,13 +370,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5008bf6d07957f548b4305ac7df5a15a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf6189a5e4bcbd64b912f5f7736c006b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
