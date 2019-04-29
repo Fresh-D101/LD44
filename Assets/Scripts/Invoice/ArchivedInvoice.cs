@@ -33,15 +33,15 @@ public class ArchivedInvoice : MonoBehaviour,
 
     public void ViewInvoice()
     {
-
+        //Get the Invoice from the Invoice factory
     }
 
     public void ExtendInvoice()
     {
-        
+        //Implement Extend Logic
     }
 
-    private void UpdateUI()
+    public void UpdateUI()
     {
         if (PlayerData.Instance.GetAvailableExtendCount() <= 0)
         {

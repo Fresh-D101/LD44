@@ -1,6 +1,9 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using GameEvents;
+using UnityEngine;
 using TMPro;
+using UnityEngine.UIElements;
+using Button = UnityEngine.UI.Button;
+using Cursor = UnityEngine.UIElements.Cursor;
 
 public class Invoice : MonoBehaviour
 {
@@ -11,6 +14,7 @@ public class Invoice : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_Duration = null;
     [SerializeField] private Button m_SignatureButton = null;
     [SerializeField] private GameObject m_Signature = null;
+    private bool m_isNewOpenedInvoice;
 
     [Header("Buttons")] 
     [SerializeField] 
@@ -22,9 +26,16 @@ public class Invoice : MonoBehaviour
 
     public InvoiceData InvoiceData { get => m_InvoiceData; set => m_InvoiceData = value; }
 
-    public void Instantiate(InvoiceReasons invoiceReasons, int price, int duration)
+    public void Initialize(InvoiceReasons invoiceReasons, int price, int duration, bool newOpened)
     {
         m_InvoiceData = new InvoiceData(invoiceReasons, price, duration);
+        m_isNewOpenedInvoice = newOpened;
+    }
+
+    public void Initialize(InvoiceData data, bool newOpened)
+    {
+        m_InvoiceData = data;
+        m_isNewOpenedInvoice = newOpened;
     }
     
     private void Start()
@@ -61,6 +72,7 @@ public class Invoice : MonoBehaviour
     {
         UpdateUI();
         gameObject.SetActive(true);
+        //TODO Set the Cursor
     }
 
     private void UpdateUI()
@@ -101,6 +113,17 @@ public class Invoice : MonoBehaviour
 
     private void CloseInvoice()
     {
-        
+        if (m_isNewOpenedInvoice)
+        {
+            if (PlayerData.Instance.GetUnopenedInvoices().Count > 0)
+            {
+                GameEventManager.TriggerEvent(new GameEvent_InvoiceClosed());
+            }
+        }
+
+        //Set object to inactive ("pool object")
+        gameObject.SetActive(false);
+        //Set the data to null, to ensure it is not being used by later invoices
+        InvoiceData = null;
     }
 }

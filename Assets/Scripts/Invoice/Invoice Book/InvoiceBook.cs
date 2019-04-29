@@ -1,9 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using GameEvents;
 
 public class InvoiceBook : MonoBehaviour,
-    IGameEventListener<GameEvent_InvoiceArchived>
+    IGameEventListener<GameEvent_InvoiceArchived>,
+    IGameEventListener<GameEvent_UsedExtend>,
+    IGameEventListener<GameEvent_GainedExtend>
 {
     [SerializeField] private GameObject m_ArchivedInvoicePrefab = null;
     [SerializeField] private Transform m_LeftPage = null;
@@ -45,5 +48,37 @@ public class InvoiceBook : MonoBehaviour,
     public void OpenInvoice()
     {
 
+    }
+
+    public void OnGameEvent(GameEvent_UsedExtend eventType)
+    {
+        UpdateUI();
+    }
+
+    public void OnGameEvent(GameEvent_GainedExtend eventType)
+    {
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
+        foreach (var invoice in m_archivedInvoices)
+        {
+            invoice.UpdateUI();
+        }
+    }
+
+    private void OnEnable()
+    {
+        this.EventStartListening<GameEvent_InvoiceArchived>();
+        this.EventStartListening<GameEvent_UsedExtend>();
+        this.EventStartListening<GameEvent_GainedExtend>();
+    }
+
+    private void OnDisable()
+    {
+        this.EventStopListening<GameEvent_InvoiceArchived>();
+        this.EventStopListening<GameEvent_UsedExtend>();
+        this.EventStopListening<GameEvent_GainedExtend>();
     }
 }

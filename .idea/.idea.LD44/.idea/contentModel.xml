@@ -28,6 +28,10 @@
             <e p="HandTracker.cs" t="Include" />
           </e>
           <e p="Invoice" t="Include">
+            <e p="ArchivedInvoice.cs" t="Include" />
+            <e p="Invoice Book" t="Include">
+              <e p="InvoiceBook.cs" t="Include" />
+            </e>
             <e p="Invoice.cs" t="Include" />
             <e p="InvoiceData.cs" t="Include" />
             <e p="InvoicePile.cs" t="Include" />
