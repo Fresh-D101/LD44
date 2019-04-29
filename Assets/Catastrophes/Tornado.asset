@@ -18,7 +18,7 @@ MonoBehaviour:
   m_IsUnlocked: 0
   m_Price: 300
   m_Duration: 20
-  m_Cooldown: 50
-  m_MinimumKills: 50
-  m_MaximumKills: 150
+  m_Cooldown: 40
+  m_MinimumKills: 15
+  m_MaximumKills: 80
   m_CritChance: 0.2

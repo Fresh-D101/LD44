@@ -796,10 +796,13 @@ MonoBehaviour:
   m_InvoiceData:
     m_Reason: {fileID: 0}
     m_Price: 0
+    m_currentDuration: 0
     m_IsSigned: 0
     m_IsExtended: 0
     invoiceDesignType: 0
   m_ExtendButton: {fileID: 161269609431407673}
+  m_DurationText: {fileID: 161269608083119764}
+  m_PriceText: {fileID: 161269608905605413}
   m_Duration: 0
   m_Price: 0
 --- !u!1 &161269609431407675

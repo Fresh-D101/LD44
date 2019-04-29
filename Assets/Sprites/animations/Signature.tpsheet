@@ -1,0 +1,65 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:a27b5c2bd0540f3006fdfe49ef350a56:0dc91e952a3ea606766514c9cdad5291:793a494733f14627520d4442746415e1$
+#
+:format=40300
+:texture=Signature.png
+:size=4096x4096
+:pivotpoints=enabled
+:borders=disabled
+
+death_signature0001;0;3678;692;418; 0.5;0.5; 0;0;0;0
+death_signature0002;692;3678;692;418; 0.5;0.5; 0;0;0;0
+death_signature0003;1384;3678;692;418; 0.5;0.5; 0;0;0;0
+death_signature0004;2076;3678;692;418; 0.5;0.5; 0;0;0;0
+death_signature0005;2768;3678;692;418; 0.5;0.5; 0;0;0;0
+death_signature0006;0;3260;692;418; 0.5;0.5; 0;0;0;0
+death_signature0007;692;3260;692;418; 0.5;0.5; 0;0;0;0
+death_signature0008;1384;3260;692;418; 0.5;0.5; 0;0;0;0
+death_signature0009;2076;3260;692;418; 0.5;0.5; 0;0;0;0
+death_signature0010;2768;3260;692;418; 0.5;0.5; 0;0;0;0
+death_signature0011;0;2842;692;418; 0.5;0.5; 0;0;0;0
+death_signature0012;0;2842;692;418; 0.5;0.5; 0;0;0;0
+death_signature0013;0;2842;692;418; 0.5;0.5; 0;0;0;0
+death_signature0014;692;2842;692;418; 0.5;0.5; 0;0;0;0
+death_signature0015;1384;2842;692;418; 0.5;0.5; 0;0;0;0
+death_signature0016;2076;2842;692;418; 0.5;0.5; 0;0;0;0
+death_signature0017;2768;2842;692;418; 0.5;0.5; 0;0;0;0
+death_signature0018;0;2424;692;418; 0.5;0.5; 0;0;0;0
+death_signature0019;692;2424;692;418; 0.5;0.5; 0;0;0;0
+death_signature0020;1384;2424;692;418; 0.5;0.5; 0;0;0;0
+death_signature0021;2076;2424;692;418; 0.5;0.5; 0;0;0;0
+death_signature0022;2768;2424;692;418; 0.5;0.5; 0;0;0;0
+death_signature0023;0;2006;692;418; 0.5;0.5; 0;0;0;0
+death_signature0024;692;2006;692;418; 0.5;0.5; 0;0;0;0
+death_signature0025;1384;2006;692;418; 0.5;0.5; 0;0;0;0
+death_signature0026;2076;2006;692;418; 0.5;0.5; 0;0;0;0
+death_signature0027;2768;2006;692;418; 0.5;0.5; 0;0;0;0
+death_signature0028;2768;2006;692;418; 0.5;0.5; 0;0;0;0
+death_signature0029;2768;2006;692;418; 0.5;0.5; 0;0;0;0
+death_signature0030;0;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0031;0;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0032;692;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0033;692;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0034;1384;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0035;1384;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0036;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0037;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0038;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0039;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0040;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0041;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0042;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0043;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0044;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0045;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0046;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0047;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0048;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0049;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0050;2076;1588;692;418; 0.5;0.5; 0;0;0;0
+death_signature0051;2076;1588;692;418; 0.5;0.5; 0;0;0;0

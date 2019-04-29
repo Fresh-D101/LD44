@@ -17,8 +17,8 @@ MonoBehaviour:
   m_CatastropheName: Plane Crash
   m_IsUnlocked: 0
   m_Price: 50
-  m_Duration: 12
-  m_Cooldown: 30
+  m_Duration: 10
+  m_Cooldown: 50
   m_MinimumKills: 40
   m_MaximumKills: 200
   m_CritChance: 0.1

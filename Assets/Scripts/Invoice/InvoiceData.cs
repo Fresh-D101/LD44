@@ -18,11 +18,11 @@ public class InvoiceData
 {
     [SerializeField] private InvoiceReasons m_Reason;
     [SerializeField] private int m_Price;
+    [SerializeField] private int m_currentDuration;
     [SerializeField] private readonly int m_totalTotalDuration;
     [SerializeField] private bool m_IsSigned;
     [SerializeField] private bool m_IsExtended;
     [SerializeField] private EInvoiceDesignType invoiceDesignType = EInvoiceDesignType._Invalid;
-    private int m_currentDuration;
 
     public InvoiceReasons Reason { get => m_Reason; set => m_Reason = value; }
     public int Price { get => m_Price; set => m_Price = value; }

@@ -55,9 +55,13 @@ namespace UI
 
         private void UpdateMoneyDisplay()
         {
-            m_currentMoneyText.text = $"$ {CurrentMoney}";
+            m_currentMoneyText.text = CurrentMoney.ToString();
 
-            m_currentMoneyText.color = CurrentMoney > 0 ? Color.green : Color.red;
+            // Alte Version des Textes
+            //
+            //m_currentMoneyText.text = $"$ {CurrentMoney}";
+            //
+            //m_currentMoneyText.color = CurrentMoney > 0 ? Color.green : Color.red;
         }
 
         public void OnGameEvent(GameEvent_InvoiceOpen eventType)

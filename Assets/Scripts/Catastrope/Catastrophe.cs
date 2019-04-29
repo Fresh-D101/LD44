@@ -14,6 +14,7 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
     [SerializeField] private TextMeshProUGUI m_Cooldown = null;
     [SerializeField] private Slider m_ActivationBar = null;
     [SerializeField] private Image m_Icon = null;
+    [SerializeField] private GameObject m_GreyOut = null;
     [Space]
     [SerializeField] private Button m_Button = null;
     
@@ -50,6 +51,8 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
         m_ActivationBar.maxValue = m_CatastropheData.Duration * PlayerData.TimeScale;
         m_AppName.text = m_CatastropheData.CatastropheName;
         m_Cooldown.text = null;
+
+        m_GreyOut.SetActive(false);
     }
 
     public void UnlockButton()
@@ -87,13 +90,19 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
         m_progress = m_CatastropheData.Cooldown;
         m_Cooldown.text = m_CatastropheData.Cooldown.ToString();
 
+        m_GreyOut.SetActive(true);
+
         if (Random.Range(0f, 1f) <= m_CatastropheData.CritChance)
         {
             PlayerData.Instance.AddMoney(Random.Range(4 * (m_CatastropheData.MinimumKills + 1), 4 * m_CatastropheData.MaximumKills));
+
+            Debug.Log(PlayerData.Instance.CurrentMoney.ToString());
         }
         else
         {
             PlayerData.Instance.AddMoney(Random.Range(m_CatastropheData.MinimumKills, m_CatastropheData.MaximumKills));
+
+            Debug.Log(PlayerData.Instance.CurrentMoney.ToString());
         }
     }
 
@@ -101,6 +110,7 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
     {
         m_Button.enabled = true;
         hasCoolDown = false;
+        m_GreyOut.SetActive(false);
 
         m_Cooldown.text = null;
 
