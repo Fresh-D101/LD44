@@ -8,6 +8,9 @@ public class HandTracker : MonoBehaviour
     [SerializeField] private Transform m_HandPivot = null;
     [SerializeField] private Transform m_JacketPivot = null;
     [SerializeField] private Transform m_JacketTarget = null;
+    [Space]
+    [SerializeField] private float m_xAxisMultiplies = 1f;
+    [SerializeField] private float m_yAxisMultiplies = 1f;
 
     [SerializeField] private Vector3 temp = Vector3.zero;
 
@@ -16,8 +19,8 @@ public class HandTracker : MonoBehaviour
         m_Target.transform.position = Input.mousePosition;
 
         m_HandPivot.localPosition = m_Target.localPosition;
-        temp.x = m_Target.localPosition.x * 0.6f;
-        temp.y = m_Target.localPosition.y * 0.8f;
+        temp.x = m_Target.localPosition.x * m_xAxisMultiplies;
+        temp.y = m_Target.localPosition.y * m_yAxisMultiplies;
         temp.z = 0;
         m_JacketTarget.localPosition = temp;
         m_JacketPivot.position = m_JacketTarget.position;
