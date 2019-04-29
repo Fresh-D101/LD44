@@ -13,12 +13,9 @@ public class Invoice : MonoBehaviour
     [SerializeField] private GameObject m_Signature = null;
 
     [Header("Buttons")] 
-    [SerializeField] 
-    private Button m_PayButton;
-    [SerializeField]
-    private Button m_archiveButton;
-    [SerializeField]
-    private Button m_extendButton;
+    [SerializeField] private Button m_PayButton;
+    [SerializeField] private Button m_archiveButton;
+    [SerializeField] private Button m_postponeButton;
 
     public InvoiceData InvoiceData { get => m_InvoiceData; set => m_InvoiceData = value; }
 
@@ -67,11 +64,11 @@ public class Invoice : MonoBehaviour
     {
         if (PlayerData.Instance.GetAvailableExtendCount() <= 0)
         {
-            m_extendButton.interactable = false;
+            m_postponeButton.interactable = false;
         }
         else
         {
-            m_extendButton.interactable = !m_InvoiceData.IsExtended; 
+            m_postponeButton.interactable = !m_InvoiceData.IsExtended; 
         }
 
         m_PayButton.interactable = PlayerData.Instance.CurrentMoney >= m_InvoiceData.Price;
