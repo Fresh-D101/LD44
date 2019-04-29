@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameEvents;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class InvoicePile : MonoBehaviour
+public class InvoicePile : MonoBehaviour, IGameEventListener<GameEvent_InvoiceClosed>
 {
     
     private Image m_image;
@@ -14,6 +15,8 @@ public class InvoicePile : MonoBehaviour
     private float m_timer;
     [SerializeField]
     private Envelope m_envelope;
+    [SerializeField]
+    private GameObject m_openNextDialogue;
     
 
     [SerializeField] 
@@ -21,6 +24,10 @@ public class InvoicePile : MonoBehaviour
 
     private void Start()
     {
+        // Hier könnte man eventuell noch schauen, ob es sinvoller wäre, nur zu subscriben wenn durch den Pile eine Invoice geöffnet wurde
+        // so spart man sich die überprüfung durch den Bool in der Invoice.cs
+        this.EventStartListening();
+        
         m_data = PlayerData.Instance;
         m_image = GetComponent<Image>();
         m_button = GetComponent<Button>();
@@ -61,9 +68,17 @@ public class InvoicePile : MonoBehaviour
         m_button.enabled = true;
     }
 
+    public void CloseDialogue()
+    {
+        m_openNextDialogue.SetActive(false);
+    }
+
     public void OpenInvoice()
     {
-        var invoiceData = m_data.GetOldestUnopenedInvoiceData();
+        // Make sure to close the dialogue
+        m_openNextDialogue.SetActive(false);
+        
+        /*var invoiceData = m_data.GetOldestUnopenedInvoiceData();
         var prefab = GameManager.Instance.GetInvoicePrefab(out var designType);
         var invoiceObject = Instantiate(prefab, transform.parent.position, Quaternion.identity, transform.parent);
         invoiceObject.SetActive(false);
@@ -80,9 +95,12 @@ public class InvoicePile : MonoBehaviour
 #else
             return;
 #endif
-        }
+        }*/
+
+        var invoiceData = m_data.GetOldestUnopenedInvoiceData();
+        var invoiceComponent = GameManager.InvoiceFactory.CreateNewInvoice(invoiceData);
         
-        invoiceComponent.InvoiceData = invoiceData;
+        invoiceComponent.Initialize(invoiceData, true);
         
         m_envelope.OpenEnvelope(invoiceComponent);
         
@@ -103,4 +121,13 @@ public class InvoicePile : MonoBehaviour
         Invoke(nameof(GenerateNewInvoice), nextInvoke);
     }
 
+    public void OnGameEvent(GameEvent_InvoiceClosed eventType)
+    {
+        m_openNextDialogue.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        this.EventStopListening();
+    }
 }

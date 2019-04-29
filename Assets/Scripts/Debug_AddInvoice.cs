@@ -13,7 +13,8 @@ public class Debug_AddInvoice : MonoBehaviour
     public void CreateInvoice()
     {
         GameObject temp = Instantiate(m_Prefab, m_Parent);
-        temp.GetComponent<Invoice>().Instantiate(m_Reason, m_Price, m_Duration);
+        var invoice = temp.GetComponent<Invoice>(); 
+        invoice.Initialize(m_Reason, m_Price, m_Duration, false);
     }
 }
 

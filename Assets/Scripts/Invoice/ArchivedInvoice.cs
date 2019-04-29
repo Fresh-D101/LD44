@@ -36,7 +36,7 @@ public class ArchivedInvoice : MonoBehaviour,
 
     public void ViewInvoice()
     {
-
+        //Get the Invoice from the Invoice factory
     }
 
     public void ExtendInvoice()
