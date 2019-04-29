@@ -36,16 +36,18 @@ public class ArchivedInvoice : MonoBehaviour,
 
     public void ViewInvoice()
     {
-        //Get the Invoice from the Invoice factory
+        var invoice = GameManager.InvoiceFactory.CreateInvoiceFromArchive(m_InvoiceData);
+        
+        invoice.ShowInvoice();
     }
 
     public void ExtendInvoice()
     {
-
+        
     }
 
     [ContextMenu("Update UI")]
-    private void UpdateUI()
+    public void UpdateUI()
     {
         if (PlayerData.Instance.GetAvailableExtendCount() <= 0)
         {

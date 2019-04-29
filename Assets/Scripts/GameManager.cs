@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_MenuOpen>
     {
         Instance = this;
         
-        Cursor.SetCursor(m_cursor, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(m_cursor, new Vector2(0.25f, 0f), CursorMode.ForceSoftware);
         m_playerData = new PlayerData(m_initialMoney, m_maxExtends, m_neededExtendProgress);
 
         SetUpPool();
