@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: dd983013d4c5bde4bb00ff8c535c2da9
+guid: 7d96d400175527349a092bed2c21b291
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7003380408403785453
-    second: special icons_0
+      213: -5659257167208632721
+    second: death_counter_ori_split_0
   - first:
-      213: -2073819619579716226
-    second: special icons_1
+      213: -3158371299283484271
+    second: death_counter_ori_split_1
+  - first:
+      213: -2137242470802534920
+    second: death_counter_ori_split_2
+  - first:
+      213: -2998008096779509005
+    second: death_counter_ori_split_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -90,13 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: special icons_0
+      name: death_counter_ori_split_0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 143
-        width: 148
-        height: 110
+        x: 4
+        y: 433
+        width: 69
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,20 +110,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73741f70ceef04f43933d66bbb0e1abd
-      internalID: 7003380408403785453
+      spriteID: 51b2025a50cad774685d5766b13adcc1
+      internalID: -5659257167208632721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: special icons_1
+      name: death_counter_ori_split_1
       rect:
         serializedVersion: 2
         x: 74
-        y: 2
-        width: 104
-        height: 112
+        y: 442
+        width: 50
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +131,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74eecf96d099de54d9f5cd3c1237113a
-      internalID: -2073819619579716226
+      spriteID: db4a4c168793c6e499dde841094603ed
+      internalID: -3158371299283484271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_counter_ori_split_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 220
+        width: 507
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57bb67718c1a43488eadaa11f479acc
+      internalID: -2137242470802534920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_counter_ori_split_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 504
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db45f7d103f0a24a8ff09091b4f9a30
+      internalID: -2998008096779509005
       vertices: []
       indices: 
       edges: []
@@ -134,7 +182,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 27417049ebd770046816fd67d4453079
+    spriteID: 0197507a0ddaec34db23cc9d896272d3
     internalID: 0
     vertices: []
     indices: 

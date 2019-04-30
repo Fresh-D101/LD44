@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: dd983013d4c5bde4bb00ff8c535c2da9
+guid: d0d64f6bc52297e41a4ef3cf0a8dbabd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7003380408403785453
-    second: special icons_0
+      213: -1945291190989379769
+    second: death_counter_new_0
   - first:
-      213: -2073819619579716226
-    second: special icons_1
+      213: 4740565547586051982
+    second: death_counter_new_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -90,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: special icons_0
+      name: death_counter_new_0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 143
-        width: 148
-        height: 110
+        x: 1
+        y: 262
+        width: 507
+        height: 204
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,20 +104,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73741f70ceef04f43933d66bbb0e1abd
-      internalID: 7003380408403785453
+      spriteID: 09d95b0fa920098499dba62f5b03deb0
+      internalID: -1945291190989379769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: special icons_1
+      name: death_counter_new_1
       rect:
         serializedVersion: 2
-        x: 74
-        y: 2
-        width: 104
-        height: 112
+        x: 100
+        y: 56
+        width: 400
+        height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74eecf96d099de54d9f5cd3c1237113a
-      internalID: -2073819619579716226
+      spriteID: f9658d21dc4ff8a428fae9f339bbd36f
+      internalID: 4740565547586051982
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 27417049ebd770046816fd67d4453079
+    spriteID: 48e6a30b624c757439dfa5d7dc607043
     internalID: 0
     vertices: []
     indices: 

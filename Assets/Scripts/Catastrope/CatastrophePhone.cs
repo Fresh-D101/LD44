@@ -5,16 +5,20 @@ using GameEvents;
 
 public class CatastrophePhone : MonoBehaviour
 {
+    [SerializeField] private Transform m_anchor = null;
+    [SerializeField] private Transform m_disabled = null;
+    [SerializeField] private Transform m_enabled = null;
+
     public void OpenPhone()
     {
-        this.transform.GetChild(0).transform.gameObject.SetActive(true);
+        m_anchor.localPosition = m_enabled.localPosition;
 
         GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(true));
     }
 
     public void ClosePhone()
     {
-        this.transform.GetChild(0).transform.gameObject.SetActive(false);
+        m_anchor.localPosition = m_disabled.localPosition;
 
         GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(false));
     }
