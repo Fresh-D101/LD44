@@ -943,8 +943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_envelope: {fileID: 5333022273128867988}
-  m_openNextDialogue: {fileID: 5707122667247176468, guid: a8fd46c5e38ce3b4cbe680797552e0f4,
-    type: 3}
+  m_openNextDialogue: {fileID: 460010450252802637}
   m_emptyTray: {fileID: 21300000, guid: ff1601e484d539c48b491ccf08299a11, type: 3}
   m_singleLetter: {fileID: 21300000, guid: 362fde31c8693d94aa5ea1f25628c1e3, type: 3}
   m_doubleLetter: {fileID: 21300000, guid: e58adf27ec1c7ed4c92bcb3d39581439, type: 3}

@@ -14,6 +14,8 @@
           <e p="Catastrope" t="Include">
             <e p="Catastrophe.cs" t="Include" />
             <e p="CatastropheData.cs" t="Include" />
+            <e p="CatastrophePhone.cs" t="Include" />
+            <e p="CustomButton.cs" t="Include" />
             <e p="ICatastrophe.cs" t="Include" />
           </e>
           <e p="Debug_AddInvoice.cs" t="Include" />

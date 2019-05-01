@@ -73,6 +73,7 @@ public class InvoicePile : MonoBehaviour, IGameEventListener<GameEvent_InvoiceCl
     public void CloseDialogue()
     {
         m_openNextDialogue.SetActive(false);
+        GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(false));
     }
 
     public void OpenInvoice()
@@ -125,7 +126,15 @@ public class InvoicePile : MonoBehaviour, IGameEventListener<GameEvent_InvoiceCl
 
     public void OnGameEvent(GameEvent_InvoiceClosed eventType)
     {
-        m_openNextDialogue.SetActive(true);
+        if (PlayerData.Instance.GetUnopenedInvoices().Count > 0)
+        {
+            m_openNextDialogue.SetActive(true);
+            GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(true));
+        }
+        else
+        {
+            GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(false));
+        }
     }
 
     private void OnDisable()

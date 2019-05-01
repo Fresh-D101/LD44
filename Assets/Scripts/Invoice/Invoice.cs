@@ -1,9 +1,7 @@
 ﻿using GameEvents;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
-using Cursor = UnityEngine.UIElements.Cursor;
 
 public class Invoice : MonoBehaviour, IGameEventListener<GameEvent_SignatureDone>
 {
@@ -119,17 +117,17 @@ public class Invoice : MonoBehaviour, IGameEventListener<GameEvent_SignatureDone
 
     private void CloseInvoice()
     {
+        
+        GameManager.Instance.ResetInvoice(InvoiceData.InvoiceDesignType);
+        
         if (m_isNewOpenedInvoice)
         {
-            if (PlayerData.Instance.GetUnopenedInvoices().Count > 0)
-            {
-                GameEventManager.TriggerEvent(new GameEvent_InvoiceClosed());
-            }
+            //If its an unopened Invoice, send the Event for the invoice pile
+            GameEventManager.TriggerEvent(new GameEvent_InvoiceClosed());
+            return;
         }
         
         GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(false));
-        
-        GameManager.Instance.ResetInvoice(InvoiceData.InvoiceDesignType);
     }
     
     public void OnGameEvent(GameEvent_SignatureDone eventType)
