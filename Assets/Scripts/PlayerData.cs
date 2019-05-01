@@ -17,7 +17,8 @@ public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_Day
 
     private static readonly float m_timeScale = 2f;
     private int m_currentMoney = 0;
-    private int m_availableExtends;
+    private int m_currentStrikes = 0;
+    private int m_availableExtends = 0;
     private int m_currentExtendProgress = 0;
     private readonly List<InvoiceData> m_unopenedInvoices = new List<InvoiceData>();
     private readonly List<InvoiceData> m_archivedInvoices = new List<InvoiceData>();
@@ -120,6 +121,16 @@ public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_Day
         }
     }
 
+    public int CurrentStrikes
+    {
+        get => m_currentStrikes;
+        private set
+        {
+            m_currentStrikes = value;
+            NotifyStrikesUpdate();
+        }
+    }
+
     public static float TimeScale => m_timeScale;
 
     public void AddMoney(int amount)
@@ -130,6 +141,16 @@ public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_Day
     public void SubstractMoney(int amount)
     {
         CurrentMoney -= amount;
+    }
+
+    public void AddStrike(int amount)
+    {
+        CurrentStrikes += amount;
+    }
+
+    public void SubstractStrike(int amount)
+    {
+        CurrentStrikes -= amount;
     }
 
     public void RegisterObserver(IDataObserver o)
@@ -147,6 +168,14 @@ public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_Day
         foreach (var observer in s_observers)
         {
             observer.UpdateMoney(CurrentMoney);
+        }
+    }
+
+    public void NotifyStrikesUpdate()
+    {
+        foreach (var observer in s_observers)
+        {
+            observer.UpdateStrikes(CurrentStrikes);
         }
     }
 

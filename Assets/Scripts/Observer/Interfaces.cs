@@ -10,5 +10,6 @@
     public interface IDataObserver
     {
         void UpdateMoney(int moneyAmount);
+        void UpdateStrikes(int strikesAmount);
     }
 }

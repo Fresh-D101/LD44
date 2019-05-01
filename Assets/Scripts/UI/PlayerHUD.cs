@@ -9,10 +9,12 @@ namespace UI
     public class PlayerHUD : MonoBehaviour, IDataObserver, IGameEventListener<GameEvent_ContextMenuOpen>
     {
         [SerializeField] private TextMeshProUGUI m_currentMoneyText = null;
+        [SerializeField] private TextMeshProUGUI m_currentStrikesText = null;
 
         private int m_currentMoney = 0;
+        private int m_currentStrikes = 0;
 
-        [SerializeField] private GameObject InvoicePanel;
+        [SerializeField] private GameObject InvoicePanel = null;
 
         private int CurrentMoney
         {
@@ -24,17 +26,27 @@ namespace UI
             }
         }
 
+        private int CurrentStrikes 
+        {
+            get => m_currentStrikes;
+            set 
+            {
+                m_currentStrikes = value;
+                UpdateStrikesDisplay();
+            }
+        }
+
         private void Start()
         {
             PlayerData.Instance.RegisterObserver(this);
             
             CurrentMoney = PlayerData.Instance.CurrentMoney;
+            CurrentStrikes = PlayerData.Instance.CurrentStrikes;
         }
 
-        public void UpdateMoney(int moneyAmount)
-        {
-            CurrentMoney = moneyAmount;
-        }
+        public void UpdateMoney(int moneyAmount) => CurrentMoney = moneyAmount;
+
+        public void UpdateStrikes(int strikesAmount) => CurrentStrikes = strikesAmount;
 
         private void OnDestroy()
         {
@@ -53,15 +65,26 @@ namespace UI
             PlayerData.Instance.SubstractMoney(Random.Range(10, 10000));
         }
 
+        [ContextMenu("Add Strike")]
+        private void AddStrike()
+        {
+            PlayerData.Instance.AddStrike(1);
+        }
+
+        [ContextMenu("Remove Strike")]
+        private void RemoveStrike()
+        {
+            PlayerData.Instance.SubstractStrike(1);
+        }
+
         private void UpdateMoneyDisplay()
         {
             m_currentMoneyText.text = CurrentMoney.ToString();
+        }
 
-            // Alte Version des Textes
-            //
-            //m_currentMoneyText.text = $"$ {CurrentMoney}";
-            //
-            //m_currentMoneyText.color = CurrentMoney > 0 ? Color.green : Color.red;
+        private void UpdateStrikesDisplay() 
+        {
+            m_currentStrikesText.text = CurrentStrikes.ToString();
         }
 
         public void OnGameEvent(GameEvent_ContextMenuOpen eventType)
