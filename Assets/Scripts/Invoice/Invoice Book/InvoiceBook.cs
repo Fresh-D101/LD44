@@ -8,6 +8,12 @@ public class InvoiceBook : MonoBehaviour,
     IGameEventListener<GameEvent_UsedExtend>,
     IGameEventListener<GameEvent_GainedExtend>
 {
+    [Header("Transforms")]
+    [SerializeField] private Transform m_book = null;
+    [SerializeField] private Transform m_bookOpened = null; 
+    [SerializeField] private Transform m_bookClosed = null; 
+
+    [Header("Pages and Invoices")]
     [SerializeField] private GameObject m_ArchivedInvoicePrefab = null;
     [SerializeField] private Transform m_LeftPage = null;
     [SerializeField] private Transform m_RightPage = null;
@@ -65,6 +71,20 @@ public class InvoiceBook : MonoBehaviour,
         foreach (var invoice in m_archivedInvoices)
         {
             invoice.UpdateUI();
+        }
+    }
+
+    public void ToggleBook(bool input) 
+    {
+        if (input)
+        {
+            m_book.localPosition = m_bookOpened.localPosition;
+            GameEvents.GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(true));
+        } 
+        else
+        {
+            m_book.localPosition = m_bookClosed.localPosition;
+            GameEvents.GameEventManager.TriggerEvent(new GameEvent_ContextMenuOpen(false));
         }
     }
 
