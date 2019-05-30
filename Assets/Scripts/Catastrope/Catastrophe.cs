@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -9,7 +10,8 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
     IGameEventListener<GameEvent_HourElapsed>
 {
     [SerializeField] private CatastropheData m_CatastropheData = null;
-    [Space]
+
+    [Space] [SerializeField] private bool m_bIsUnlocked;
     [SerializeField] private TextMeshProUGUI m_AppName = null;
     [SerializeField] private TextMeshProUGUI m_Kills = null;
     [SerializeField] private TextMeshProUGUI m_Cooldown = null;
@@ -31,6 +33,7 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
             return;
         }
         
+        Initialize();
         UpdateUI();
     }
 
@@ -39,7 +42,7 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
          m_AppName.text = m_CatastropheData.CatastropheName;
         m_Kills.text = $"Deaths: {m_CatastropheData.MinimumKills} - {m_CatastropheData.MaximumKills}";
         m_Cooldown.text = m_CatastropheData.Cooldown.ToString();
-        m_Icon.sprite = m_CatastropheData.IsUnlocked ? m_CatastropheData.UnlockedIcon : m_CatastropheData.LockedIcon; 
+        m_Icon.sprite = m_bIsUnlocked ? m_CatastropheData.UnlockedIcon : m_CatastropheData.LockedIcon; 
     }
 
     [ContextMenu("Initialize")]
@@ -52,7 +55,7 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
 
         m_Button.onClick.RemoveAllListeners();
 
-        if (m_CatastropheData.IsUnlocked)
+        if (m_bIsUnlocked)
         {
             m_Icon.sprite = m_CatastropheData.UnlockedIcon;
             m_Kills.text = $"Deaths: {m_CatastropheData.MinimumKills} - {m_CatastropheData.MaximumKills}";
@@ -83,6 +86,7 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
             m_Button.onClick.RemoveListener(UnlockButton);
             m_Button.onClick.AddListener(StartCatastrophe);
 
+            m_bIsUnlocked = true;
             UpdateUI();
         }
     }
@@ -171,5 +175,16 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
                 EndCooldown();
             }
         }
+    }
+
+    public void Serialize(BinaryWriter writer)
+    {
+        writer.Write(m_bIsUnlocked);
+    }
+
+    public void Deserialize(BinaryReader reader)
+    {
+        m_bIsUnlocked = reader.ReadBoolean();
+        UpdateUI();
     }
 }

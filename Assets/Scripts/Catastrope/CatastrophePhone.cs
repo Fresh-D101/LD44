@@ -42,7 +42,7 @@ public class CatastrophePhone : MonoBehaviour
         
         foreach (var catastrophe in m_Catastrophes)
         {
-            writer.Write(catastrophe.CatastropheData.IsUnlocked);
+            catastrophe.Serialize(writer);
         }
     }
 
@@ -54,8 +54,7 @@ public class CatastrophePhone : MonoBehaviour
 
         foreach (var catastrophe in m_Catastrophes)
         {
-            catastrophe.CatastropheData.IsUnlocked = reader.ReadBoolean();
-            catastrophe.UpdateUI();
+            catastrophe.Deserialize(reader);
         }
 
         return true;

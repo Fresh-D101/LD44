@@ -6,7 +6,6 @@ public class CatastropheData : ScriptableObject
     [SerializeField] private Sprite m_lockedIcon = null;
     [SerializeField] private Sprite m_unlockedIcon = null;
     [SerializeField] private string m_CatastropheName = null;
-    [SerializeField] private bool m_IsUnlocked = false;
     [SerializeField] private int m_Price = 0;
     [SerializeField] private int m_Duration = 0;
     [SerializeField] private int m_Cooldown = 0;
@@ -16,7 +15,6 @@ public class CatastropheData : ScriptableObject
     [SerializeField] private float m_CritChance = 0f;
 
     public string CatastropheName { get => m_CatastropheName; set => m_CatastropheName = value; }
-    public bool IsUnlocked { get => m_IsUnlocked; set => m_IsUnlocked = value; }
     public int Price { get => m_Price; set => m_Price = value; }
     public int Duration { get => m_Duration; set => m_Duration = value; }
     public int Cooldown { get => m_Cooldown; set => m_Cooldown = value; }
