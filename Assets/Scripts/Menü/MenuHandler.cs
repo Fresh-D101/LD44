@@ -43,7 +43,7 @@ public class MenuHandler : MonoBehaviour
 
     public void StartNewGame()
     {
-        SceneManager.LoadScene(1);
+        GameLoader.StartNewGame();
     }
 
     public void GoToMainMenu()

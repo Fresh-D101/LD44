@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using GameEvents;
+using Cursor = UnityEngine.UIElements.Cursor;
 
 public class Catastrophe : MonoBehaviour, ICatastrophe,
     IGameEventListener<GameEvent_HourElapsed>
@@ -22,6 +23,24 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
     bool hasCoolDown = false;
 
     public CatastropheData CatastropheData { get => m_CatastropheData; set => m_CatastropheData = value; }
+
+    private void Start()
+    {
+        if (m_CatastropheData == null)
+        {
+            return;
+        }
+        
+        UpdateUI();
+    }
+
+    public void UpdateUI()
+    {
+         m_AppName.text = m_CatastropheData.CatastropheName;
+        m_Kills.text = $"Deaths: {m_CatastropheData.MinimumKills} - {m_CatastropheData.MaximumKills}";
+        m_Cooldown.text = m_CatastropheData.Cooldown.ToString();
+        m_Icon.sprite = m_CatastropheData.IsUnlocked ? m_CatastropheData.UnlockedIcon : m_CatastropheData.LockedIcon; 
+    }
 
     [ContextMenu("Initialize")]
     public void Initialize()
@@ -64,8 +83,7 @@ public class Catastrophe : MonoBehaviour, ICatastrophe,
             m_Button.onClick.RemoveListener(UnlockButton);
             m_Button.onClick.AddListener(StartCatastrophe);
 
-            m_Icon.sprite = m_CatastropheData.UnlockedIcon;
-            m_Kills.text = $"Deaths: {m_CatastropheData.MinimumKills} - {m_CatastropheData.MaximumKills}";
+            UpdateUI();
         }
     }
 

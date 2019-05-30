@@ -25,4 +25,5 @@ public class CatastropheData : ScriptableObject
     public float CritChance { get => m_CritChance; set => m_CritChance = value; }
     public Sprite LockedIcon { get => m_lockedIcon; set => m_lockedIcon = value; }
     public Sprite UnlockedIcon { get => m_unlockedIcon; set => m_unlockedIcon = value; }
+    
 }

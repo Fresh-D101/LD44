@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using GameEvents;
 using Observer;
 using UnityEngine;
 
 
-public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_DayElapsed>
+public class PlayerData : ISubject, IGameEventListener<GameEvent_DayElapsed>
 {
     [Serializable]
     struct SerializableData
     {
-        public int moneyAmount;
+        public int moneyAmount;   
     }
     
     public static PlayerData Instance;
@@ -20,8 +21,8 @@ public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_Day
     private int m_currentStrikes = 0;
     private int m_availableExtends = 0;
     private int m_currentExtendProgress = 0;
-    private readonly List<InvoiceData> m_unopenedInvoices = new List<InvoiceData>();
-    private readonly List<InvoiceData> m_archivedInvoices = new List<InvoiceData>();
+    private List<InvoiceData> m_unopenedInvoices = new List<InvoiceData>();
+    private List<InvoiceData> m_archivedInvoices = new List<InvoiceData>();
     
     //Balancing Values//
     private int maxExtends = 5;
@@ -45,6 +46,56 @@ public class PlayerData : ISubject, ISerialize, IGameEventListener<GameEvent_Day
         m_currentMoney = initialMoneyAmount;
         this.maxExtends = maxExtends;
         this.neededExtendProgress = neededExtendProgress;
+    }
+
+    public void Serialize(BinaryWriter writer)
+    {
+        writer.Write(m_currentMoney);
+        writer.Write(m_currentStrikes);
+        writer.Write(m_availableExtends);
+        writer.Write(m_currentExtendProgress);
+        
+        writer.Write(m_unopenedInvoices.Count);
+        foreach (var invoice in m_unopenedInvoices)
+        {
+            invoice.Serialize(writer);
+        }
+        
+        writer.Write(m_archivedInvoices.Count);
+        foreach (var invoice in m_archivedInvoices)
+        {
+            invoice.Serialize(writer);
+        }
+
+        CatastrophePhone.Instance.Serialize(writer);
+    }
+
+    public bool Deserialize(BinaryReader reader)
+    {
+        m_currentMoney = reader.ReadInt32();
+        m_currentStrikes = reader.ReadInt32();
+        m_availableExtends = reader.ReadInt32();
+        m_currentExtendProgress = reader.ReadInt32();
+
+        m_unopenedInvoices = new List<InvoiceData>();
+        int unopenedCount = reader.ReadInt32();
+        for (int i = 0; i < unopenedCount; i++)
+        {
+            var invoice = new InvoiceData(reader);
+            m_unopenedInvoices.Add(invoice);
+        }
+        
+        m_archivedInvoices = new List<InvoiceData>();
+        int archivedCount = reader.ReadInt32();
+        for (int i = 0; i < archivedCount; i++)
+        {
+            var invoice = new InvoiceData(reader);
+            m_archivedInvoices.Add(invoice);
+        }
+
+        CatastrophePhone.Instance.Deserialize(reader);
+
+        return true;
     }
 
     public void UseUpExtend()

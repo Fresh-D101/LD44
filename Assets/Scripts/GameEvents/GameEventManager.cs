@@ -52,7 +52,9 @@ namespace GameEvents
     /// will catch all events of type MyGameEvent emitted from anywhere in the game, and do something if it's named GameOver
 
     [ExecuteInEditMode]
-    public static class GameEventManager
+    public static class 
+        
+        GameEventManager
     {
         private static readonly Dictionary<Type, List<IGameEventListener>> _subscribersList;
 

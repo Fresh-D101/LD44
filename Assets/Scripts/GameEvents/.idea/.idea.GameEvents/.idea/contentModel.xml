@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\domin\.Rider2018.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\domin\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\domin\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_GameEvents.-416513280.00" t="ExcludeRecursive" />
+    <e p="D:\LudumDare\LD44\Assets\Scripts\GameEvents" t="IncludeFlat" />
+  </component>
+</project>

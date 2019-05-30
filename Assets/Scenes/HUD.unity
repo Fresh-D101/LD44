@@ -249,24 +249,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &1279777392 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7367953962205259699, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7367953962079072848}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab808f5eb4e0ccf41ad2d8afd10ef19d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1408189741 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 460010450252802637, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7367953962079072848}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7367953962079072848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -344,76 +326,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 460010450252802637, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 128988188971380324, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 128988188971380324, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 128988188971380324, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 128988188971380324, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1279777392}
-    - target: {fileID: 128988188971380324, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenInvoice
-      objectReference: {fileID: 0}
-    - target: {fileID: 128988188971380324, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2157142390392971514, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2157142390392971514, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2157142390392971514, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2157142390392971514, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1279777392}
-    - target: {fileID: 2157142390392971514, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseDialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 2157142390392971514, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7367953962205259699, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
-        type: 3}
-      propertyPath: m_openNextDialogue
-      value: 
-      objectReference: {fileID: 1408189741}
     - target: {fileID: 8597735615509986647, guid: 9670f1c2c171cad409b8a74f69b8ed0b,
         type: 3}
       propertyPath: m_SizeDelta.y

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.IO;
 using UnityEngine;
 using GameEvents;
 
@@ -21,9 +22,9 @@ public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_ContextMe
     [SerializeField] private int m_initialMoney;
     [SerializeField] private int m_maxExtends;
     [SerializeField] private int m_neededExtendProgress;
-
+    
     [SerializeField] private Texture2D m_cursor;
-
+    
     private PlayerData m_playerData;
     
     private static List<ISerialize> MasterData = new List<ISerialize>();
@@ -93,17 +94,6 @@ public class GameManager : MonoBehaviour, IGameEventListener<GameEvent_ContextMe
         
         s_blueInvoice = Instantiate(InvoiceDesignTemplateBlue);
         s_blueInvoice.SetActive(false);
-    }
-
-    //TODO
-    private static void Save()
-    {
-        var jsonStrings = new StringCollection();
-        
-        foreach (var serializable in MasterData)
-        {
-            jsonStrings.Add(serializable.Serialize());
-        }     
     }
 
     public GameObject GetInvoicePrefab(out EInvoiceDesignType designType)
